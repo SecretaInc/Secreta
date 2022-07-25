@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/4891213735.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+       <style>
+             html{
+            font-size: 10px; /* to change the root size from the default 1 rem=16px to 1rem=10px*/
+            scroll-behavior: smooth;
+            }
+            h1 {
+                /* background-color: rgb(193, 186, 186); */
+                color: rgb(235, 228, 228);
+                background-color: burlywood;
+                /* font-size: 3rem; */
+                font-size: 8rem;
+                padding-top: 2%;
+                padding-left: 3%;
+                padding-right: 5%;
+                font-family: 'Times New Roman';
+                font-weight: 550;
+                background-image: linear-gradient( -65deg, transparent 0, transparent 5%, rgb(253, 253, 253) 10%, rgb(255, 255, 255) 15%, transparent 10%, transparent 100%);
+                background-size: 200% 100%;
+                animation: animate 10s linear infinite;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                
+            }
+            @keyframes animate {
+                0%
+                {
+                    background-position: -500%;
+                }
+                100%
+                {
+                    background-position: 500%;
+                }
+            }
+            h3{
+                font-size: 2.5rem;
+                /* font-family: Georgia, 'Times New Roman', Times, serif; */
+                font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                color: rgb(40, 81, 86);
+            }
+            h4{
+                font-size: 1.5rem;
+                /* font-family: Georgia, 'Times New Roman', Times, serif; */
+                font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                /* color: rgba(255, 162, 13, 0.94); */
+                color: rgba(21, 1, 1, 0.578);
+            }
+            body {
+            /* background-color: #EABBBB; */
+            background-color: rgb(235, 228, 228);
+            padding: 0;
+            margin: 0;
+            }
+            .upper {
+                background-image: linear-gradient(to right top, #3b5d6b, #325362, #294a58, #21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011);
+                width: 100%;
+                min-height: 20rem;
+                display: flex;
+            }
+            .upper_right{
+              width: 59%;
+            }
+            .contain1 {
+                width: 50%;
+                height: 50%;
+                bottom: 0%;
+                float: right;
+                justify-content: flex-end;
+                align-self: flex-end;
+            }
+            .contain1 ul  {
+                display: inline-flex;
+                justify-content: right;
+                list-style: none;
+                /* color: seashell; */
+                width: 90%;
+                margin: 2% 0% 0% 0%;
+                padding: 0 0 0 2%;
+            }
+            .contain1 ul li{
+                min-width: 10%;
+                /* margin: 0.1rem 1%; */
+                padding: 1.3% 0;
+                text-align: center;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .contain1 ul li a {
+                font-size: 2.2rem;
+                text-decoration: none;
+                color: rgb(185, 170, 141);
+                padding: 5% 0;
+            }
+            .contain1 ul li a:hover {
+                color: burlywood;
+                font-size: 2.5rem;
+                /* border-bottom: 0.1rem solid burlywood; */
+            }
+            .nav {
+                width: 100%;
+                height: fit-content;
+                float: left;
+                /* justify-content: flex-end; */
+                /* align-self: flex-end; */
+                /* margin: 0%;
+                padding: 0%; */
+            }
+            .nav ul  {
+                display: inline-flex;
+                justify-content: left;
+                list-style: none;
+                /* color: seashell; */
+                width: 90%;
+                margin: 4% 0% 0% 4%;
+                padding: 0 2%;
+                font-family: Rockwell,'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+                /* text-decoration: underline; */
+                font-size: 1.8rem;
+
+            }
+            
+            .nav ul li{
+                min-width: 16%;
+                margin: 0.1rem 1%;
+                padding: 1.3% 2%;
+                text-align: center;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .nav ul li a {
+                text-decoration: none;
+                /* color: rgb(168, 161, 148); */
+                color: rgb(185, 170, 141);
+                /* color: bisque; */
+                /* color: rgb(214, 194, 142); */
+                padding: 5% 0;
+                
+            }
+            .active a {
+              border-bottom: 0.1rem solid burlywood;
+            }
+            .active,
+            .nav ul li:hover {
+                background: rgb(0, 0, 0, 0.4);
+                border-radius: 0.3rem;
+            }
+            .nav ul li a:hover{
+                color: burlywood;
+                border-bottom: 0.1rem solid burlywood;
+            }
+            .unit1 {
+              width: 41%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .logo{
+              float:left;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                margin-right: 2.5%;
+                margin-left: 9%;
+                width: 22%;
+                box-sizing: border-box;
+            }
+            .logo img {
+                width: 100%;
+                border-radius: 10rem;
+                border: 0.1rem solid black;
+            }
+            .logo img:hover {
+              border: 0.2rem solid black;
+              cursor: grab;
+            }
+            .text {
+              padding-top: 4%;
+                width: 66.5%;
+                float: top left;
+                text-align: center;
+                /* padding-left: 3%; */
+                /* position: relative; */
+                /* display: grid; */
+                /* padding-right: 5%; */
+            }
+            .front {
+                width: 100%;
+                min-height: 70rem; 
+                height: fit-content;
+                overflow: hidden;
+                display: inline-flex;
+                align-items: stretch
+            }
+            .leftside {
+                background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+                width: 19%;
+                max-height: 322rem;
+                /* min-height: 70rem; */
+                float: left;
+                padding-top: 1%;
+                min-height: 100%;
+                overflow: hidden;
+                
+            }
+           
+            .superhero {
+                width: 100%;
+                /* overflow: hidden; */
+            }
+            .superhero img {
+                width: 100%;
+                /* animation-name: fly;
+                animation-duration: 4s;
+                animation-iteration-count: 1;
+                /* animation-fill-mode: both; */
+                /* animation-direction: normal;  */
+            }
+            .last_vine{
+              width: 100%;
+              height: 20rem;
+              overflow: hidden;
+            }
+            .last_vine img {
+                width: 100%;
+            }
+            .mob {
+              display: none;
+            }
+            /* @keyframes fly{
+            from{ transform: translateY(90%)}
+            to{ transform: translateY(0%)}
+            } */
+            .dog {
+                width: 100%;
+                overflow: hidden;
+                margin-top: 5%;
+            }
+            .dog img {
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            .rightside {
+                padding-top: 2%;
+                padding-left: 2%;
+                width: 55%;
+                min-height: 100%;
+                float: left;
+                display: block;
+                box-sizing: border-box;
+                margin: 0%;
+                display: table-cell;
+            }
+            .intro{
+              /* background-image: linear-gradient(to right top, #3b5d6b, #325362, #294a58, #21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011); */
+               background-color: rgb(169, 13, 13, 0.2);
+              margin: 2% 0 2% 0;
+              /* border-radius: 2rem 0 2rem 0; */
+              text-align: justify;
+              padding: 2%;
+              font-family:  Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-size: 1.8rem;
+              font-weight: 500;
+              overflow: hidden;
+              /* color: peachpuff; */
+            }
+            .header{
+              /* position: relative; */
+              font-family: 'Playfair Display', serif;
+              font-weight: 900;
+              font-size: 6rem;
+              text-transform: uppercase;
+              display: inline-block;
+              line-height: 7.2rem;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              width: 100%;
+              text-align: center;
+
+          }
+        p{
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        .head{
+            text-align: center;
+            position: relative;
+
+
+        }
+
+        .headerobjectswrapper{
+        }
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid #2f2f2f;
+    border-top: 0.2rem solid #2f2f2f;
+    padding: 1.2rem 0 1.2rem 0;
+
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 3rem 2% 0 2%;
+
+
+}
+.collumns{
+    width: 100%;
+    display: flex;
+}
+.collumn:first-child {
+    width: 66%;
+}
+.collumn{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 33%;
+    /* display: flex */
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    /* margin-bottom: 5rem; */
+    /* transition: all .7s; */
+}
+
+.collumn + .collumn { 
+  border-left: 0.1rem solid #2f2f2f;
+}
+/* .news {
+    display: flex;
+} */
+/* .boxed1{
+ width: 60%;
+ text-align: justify;
+ padding: 0 2% 0 0;
+}
+.boxed2 {
+    width: 40%;
+    padding-top: 1rem;
+}
+.boxed2 img{
+    width: 100%;
+}
+.boxed1_part2{
+  text-align: justify;
+  padding: 0 2% 0 0;
+} */
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+   
+
+}
+.figcaption{
+    text-align: center;
+	font-style: italic;
+	font-size: 1.3rem;
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.6rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 10rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 10rem;
+    height: 0.7rem;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 10rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+            .welcome {
+                display: grid;
+                place-items: center;  
+                border-radius: 2rem 0 2rem 0;
+                width: 100%;
+                min-height: 12rem;
+                /* color: white; */
+                padding-top: 2%;
+                padding-left: 2%;
+                background-color: peachpuff;
+                /* background-color: rgb(137, 23, 19, 0.8); */
+                /* background-image: linear-gradient(to right, #103d54, #103d54, #103d54, #103d54, #103d54, #19374e, #1f3147, #222c40, #23212f, #1e1720, #140e12, #000000); */
+                font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+                text-align: center;
+            }
+            .title-word {
+            animation: color-animation 4s linear infinite;
+            }
+
+            .title-word-1 {
+            --color-1: #e06c2e;
+            --color-2: #DBAD4A;
+            --color-3: #b42645;
+            }
+
+            .title-word-2 {
+            --color-1: #6d9c58;
+            --color-2: #29aab4;
+            --color-3: #6d9c58;
+            }
+
+            .title-word-3 {
+            --color-1: #DBAD4A;
+            --color-2: #E4A9A8;
+            --color-3: #29aab4;
+            }
+
+            .title-word-4 {
+            --color-1: #29aab4;
+            --color-2: #b42645;
+            --color-3: #DBAD4A;
+            }
+
+            @keyframes color-animation {
+            0%    {color: var(--color-1)}
+            32%   {color: var(--color-1)}
+            33%   {color: var(--color-2)}
+            65%   {color: var(--color-2)}
+            66%   {color: var(--color-3)}
+            99%   {color: var(--color-3)}
+            100%  {color: var(--color-1)}
+            }
+
+            .title {
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 4rem;
+            text-transform: uppercase;
+            }
+            .part2{
+                width: 26%;
+                padding-top: 1%;
+                margin: 0;
+                box-sizing: border-box;
+                float: right;
+            }
+            .bird {
+                height: 7rem;
+            }
+            .bird img {
+                /* float: right; */
+                width: 65%;
+                animation-name: fly;
+                animation-duration: 4s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                animation-direction: normal; 
+            }
+            @keyframes fly{
+            from{ transform: translateX(0%)}
+            to{ transform: translateX(-415%)}
+            }
+            .quiz {
+                /* background-color: beige; */
+                width: 100%;
+                height: fit-content;
+                padding-left: 2%;
+                padding-top: 4%
+
+            }
+            .card-header.bg-info.text-white {
+              background:  linear-gradient(to right top, #3b5d6b, #325362,#325362, #294a58, #21414f,#21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0c1011);
+              color: wheat;
+              font-size: 1.5rem;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+            }
+            .card-body{
+              background-color: peachpuff;
+              font-size: 1.3rem;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              border: 0.1rem solid #2c6a79;
+            }
+            .card.border-info.mb-4 {
+              background-color: transparent;
+              border: 0rem solid #000000;
+            }
+            .superwoman {
+                width: 94%;
+                margin: auto;
+            }
+            .real_hero img, .superwoman img {
+                width: 100%;
+            }
+            .real_hero{
+              width: 84%;
+              margin: auto;
+              margin-top:20rem
+            }
+            
+            .btn.btn-primary  {
+                background-color: rgba(51, 81, 163, 0.76);
+                font-size: 2rem;
+                width: 10rem;
+                height: 4rem;
+                font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
+                margin-bottom: 5%;
+                margin-top: 0;
+                /* margin: auto; */
+            }
+
+            .end h3{
+              font-size: 3.5rem;
+              text-decoration: none;
+              padding: 0 2%;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              margin-bottom: 0;
+              color: #294a58;
+              /* margin: 0%; */
+            }
+            .end hr{
+              height: 1.2%;
+              width: 70%;
+              background-color: #294a58;
+              border: 0.5rem solid #294a58;
+              border-radius: 1rem;
+              margin: auto;
+            }
+            .end {
+              width: 100%;
+              background-image: linear-gradient(to bottom, #ef9d4e, #f0a757, #f1b261, #f2bb6c, #f3c577, #f3cb82, #f4d28d, #f5d899, #f5dca6, #f5e0b3, #f5e4c0, #f5e8cd);
+              border-top: 1rem solid #294a58;
+              padding-top: 2%;
+              display:  block;
+              justify-content: center;
+              overflow: hidden;
+            }
+            .endbox {
+              margin: auto;
+              margin-bottom: 0;
+              width: 40%;
+              text-align: center;
+            }
+            .endbox ul{
+              list-style: none;
+
+            }
+            .endbox ul li {
+              margin: 0% 0 0 25%; /*top right bottom left*/
+              width: 100%;
+              text-align: left;
+            }
+            .endbox ul li a{
+              font-family:  "Comic Sans MS", "Comic Sans", cursive;
+              text-decoration: none;
+              font-size: 2.1rem;
+              color:#112b36;
+            }
+            .endbox ul li a:hover {
+              font-size: 2.2rem;
+              background-color: rgba(41, 74,	88, 0.6);
+              color: rgb(235, 228, 228);
+               padding: 0% 1% 0% 1%;
+              /* background-color: rgb(0, 0, 0, 0.2); */
+              /* border: 0.1rem solid rgb(0, 0, 0, 0.4); */
+              transition: 0.2s;
+            }
+            .subsribe {
+              width: 25%;
+              min-height: 6rem;
+              margin: auto;
+              padding: 0rem 3%;
+              background-color: rgb(218, 62, 62);
+              
+              /* background-color: #efaf6a; */
+              font-size: 2.0rem;
+              font-family: rockwell, 'Arvo';
+             display: flex;
+             justify-content: center;
+             border-radius: 1.2rem;
+             box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+             
+            }
+            .subsribe a {
+              margin: auto;
+              color: #122f3b;
+              text-align: center;
+              text-decoration: none;
+            }
+            .subsribe:hover {
+              /* min-width: 30%; */
+              /* background-color: rgb(184, 73, 73); */
+              background-color: #0e3849;
+              padding: auto;
+              /* min-height: 6rem; */
+              /* padding: 1.5rem; */
+              border-radius: 1.2rem;
+              box-shadow: 0 0 0.8rem rgb(0, 0, 0, 1);
+              transition: 1.5s;
+              letter-spacing: 0.5rem;
+              font-size: 2.3rem;
+              
+            animation-name: press;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+            }
+            .subsribe a:hover {
+              color: white;
+            }
+            @keyframes press {
+            from{ transform: translateY(0%)}
+            to{ transform: translateY(30%)}
+          } 
+          .cloud {
+            width: 50%;
+            margin: 0%;
+            padding: 0%;
+            animation-name: cloudmove;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: normal;
+          }
+          .cloud img {
+            width: 100%;
+          }
+        @keyframes cloudmove {
+            from{ transform: translateX(-200%)}
+            to{ transform: translateX(350%)}
+        }
+        .circlesbox {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding: 0%;
+          margin: 0%;
+        }
+        .circle {
+          position: relative;
+          /* z-index: 2; */
+
+          box-sizing: border-box;
+          border-bottom: 0.5rem solid whitesmoke;   
+          background: transparent;
+          /* box-shadow: 0 0 0 20px #fff; */
+          width:10%;
+          height: 5rem;
+          border-radius:70%;
+          margin: 0;
+          padding: 0;
+        }
+
+
+
+
+            @media (min-width: 1900px) {
+                html {
+                    font-size: 120%;
+                }
+              }
+            @media (max-width: 998px) {
+                html {
+                    font-size: 50%;
+                }
+              }
+            @media (max-width: 798px) {
+                html {
+                    font-size: 41%;
+                }
+            }
+              @media (max-width: 650px) {
+                html {
+                    /* best for 508px width */
+                    font-size: 38%;
+                }  
+              }
+                @media (max-width: 596px) {
+                html { 
+                    /* best for 508px width */
+                    font-size: 30%;
+                }
+                h1{
+                    font-size: 8.5rem;
+                }
+                h3{
+                  font-size: 3.5rem;
+                  text-align: center;
+                }
+                h5{
+                  font-size: 3.9rem;
+                }
+                .upper{
+                  display: block;
+                  height: fit-content;
+                  overflow: hidden;
+                }
+                .unit1{
+                  display: flex;
+                  width: 100%;
+                }
+                .upper_right {
+                  width: 100%;
+                }
+                .contain1 {
+                  display: none;
+                }
+                .nav ul{
+                  width: 100%;
+                  margin:5% 0 1% 0;
+                  padding: 0;
+                }
+                .nav ul li{
+                  width: 20%;
+                  margin-bottom: 1%;
+                  padding-left: 0;
+                  padding-right: 0;
+                }
+                .logo {
+                  width: 15%;
+                  margin-left: 0%;
+                }
+                .part2 { 
+                  display: none;
+                }
+                .rightside{
+                  width: 79%;
+                  margin-right: 2%;
+                }
+                .card-body{              
+                font-size: 2rem;
+                }
+                .mob {
+                  display: block;
+                  width: 100%;
+                }
+                .mob img {
+                  width: 100%;
+
+                }
+                .leftside {
+                  max-height: 470rem;
+                }
+                .header{
+                  font-size: 5.5rem;
+                }
+                .collumns{
+                  display: block;
+                }
+                .collumn + .collumn { 
+                  border-left: none;
+                  
+                }
+                .collumn:first-child, .collumn{
+                  width: 100%;
+                  font-size: 2rem;
+                  padding-bottom: 3rem;
+                }
+                .collumn:first-child{
+                  border-bottom: 0.1rem solid #2f2f2f;
+                }
+
+                /* .news {
+                    display: block;
+                } */
+                
+                .subsribe{
+                  width: 30%;
+                }
+                .endbox{
+                  width: 50%;
+                }
+                .endbox ul li {
+                  margin: 0 0 0 10%;
+                }
+                .endbox ul li a{
+                    font-size: 2.0rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+            }
+            @media (max-width: 336px) {
+              .nav ul li:last-child {
+              font-size: 1.6rem;
+            }
+            .leftside {
+                  max-height: 500rem;
+                }
+          }
+
+
+            
+
+        </style>
+  </head>
+    <body>
+        <div class="upper"> 
+
+          <div class="unit1">
+            <div class="logo">
+              <a href= "index.html"><img src ="logo1.png"></a>
+            </div>
+
+            <div class="text">
+                <h1> Quizzo </h1> 
+            </div> 
+          </div>
+              
+            <div class="upper_right">
+
+            <div class="contain1">
+            <ul>
+              <li><a href="https://www.instagram.com/secreta_inc/"><i class="fa-brands fa-instagram-square"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+              <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a></li>
+            </ul>
+          </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
+                    <li><a href="index.html#area1"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                    <li class="active"><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
+                    <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
+                    <li><a href="Hall of Fame.html"><i class="fa-solid fa-medal"></i>&nbsp;Hall of Fame</a></li>
+                </ul>
+              </div>  
+            </div>
+        </div>
+
+        <div class="front">
+            <div class="leftside"> 
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <!-- <div class="last_vine"><img src="vine2.png"></div> -->
+                <div class="mob">
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  
+
+                </div>
+                <!-- <div class="dog"><img src="cartoon1.png"></div> -->
+            </div>
+
+            <div class="rightside"> 
+                <div class="welcome">
+                            <h2 class="title">
+                              <span class="title-word title-word-1">Which</span>
+                              <span class="title-word title-word-2">Real</span>
+                              <span class="title-word title-word-3">Life</span>
+                              <span class="title-word title-word-4">Hero</span>
+                              <span class="title-word title-word-2">Are</span>
+                              <span class="title-word title-word-1">You?</span>
+
+                            </h2>
+                </div>
+                <div class="intro">
+                  <div class="head">
+                    <div class="headerobjectswrapper">
+                        <!-- <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div> -->
+                        <div class="header">Secreta  Times</div>
+                    </div>
+                
+                    <div class="subhead">July 2022</div>
+                </div>
+                <div class="content">
+                    <div class="collumns">
+                        <div class="collumn">
+                            <div class="head"><span class="headline hl3">The Real Heroes</span><p><span class="headline hl4">by SOUMYADIP MUKHERJEE</span></p></div>
+                            <img src="stray dog.jpg" style="width: 40%; margin: 1rem 0 0 2%" align="right" /><p>In the present times where DC vs marvel rivalry brings in the perfect ammunition to the never dying flame of our craze for superheroes that 
+                              are presented in a reel or a silver screen of a cinema theatre and we try to ambush and enjoy the glorification of those fictional characters,
+                               we often tend to forget that the real world in times like now with some of the most severe problems like climate change, nuclear world war, 
+                               ecosystem imbalances, Deforestation, Biodiversity loss and many more……  we need heroes too and we ourselves have to become heroes of our society
+                                too.</p>  
+                              
+                                Ya, the heroes that the society needs right now has to come up from ourselves, our society. As we believe , change could be 
+                          brought only by changing the person by waking up the hero that lives within each of us and give them the superpowers. That superpower is nothing
+                           but a choice , a small choice in our daily life that can impact the world. While designing this website, we always argued that how can we 
+                           make an impact to the world through this website and thus even this short fun quiz has a goal to hit. Quizzo is a alarm-clock that wants to
+                            wake up the superhero inside us, which superhero – that will depend on the choices you will make.
+                            <!-- <div class="news">
+                            <div class= "boxed1">In the present times where DC vs marvel rivalry brings in the perfect ammunition to the never dying flame of our craze for superheroes that 
+                            are presented in a reel or a silver screen of a cinema theatre and we try to ambush and enjoy the glorification of those fictional characters,
+                             we often tend to forget that the real world in times like now with some of the most severe problems like climate change, nuclear world war, 
+                             ecosystem imbalances, Deforestation, Biodiversity loss and many more……  we need heroes too and we ourselves have to become heroes of our society
+                              too.<br> <br>  
+                              
+                            </div>         
+                        <div class="boxed2">
+                            <img src="C:\Users\91900\Downloads\Study Materials\stray dog.jpg">
+                            <figcaption class="figcaption">"Stray dog being fed by Real Heroes of our society"</figcaption>
+                        </div>
+                        </div> -->
+                        <!-- <div class="boxed1_part2">Ya, the heroes that the society needs right now has to come up from ourselves, our society. As we believe , change could be 
+                          brought only by changing the person by waking up the hero that lives within each of us and give them the superpowers. That superpower is nothing
+                           but a choice , a small choice in our daily life that can impact the world. While designing this website, we always argued that how can we 
+                           make an impact to the world through this website and thus even this short fun quiz has a goal to hit. Quizzo is a alarm-clock that wants to
+                            wake up the superhero inside us, which superhero – that will depend on the choices you will make. </div> -->
+
+                    </div>
+
+                        <div class="collumn">
+                            <div class="head"><span class="headline hl5"> “With great power comes great responsibility”</span><p><span class="headline hl6">Let's honor the heroes among us</span></p></div>
+                            At the end of the quiz, we have a very 
+                            simple request which you are bounded to fulfill. Since you are a superhero
+                             now, bring a change , do something good for the society and we will feature you and your contribution in our <b>“Hall of Fame”</b> that will inspire
+                              more to come forward and be a part of this movement
+                              <br>
+                              <br>
+                           
+                            <p>With this movement that team Secreta hopes to bring in, there will be a positive change in the society, in the way people think, in the way people act that might be the linked domino of the big change in the world. Heroes you are, heroics you so.. <i>Cheers to A Change</i>.
+
+                              
+                              <div style="text-align: right;">-team Secreta</div></p>
+                
+                            </div>
+                    </div> -->
+                </div>
+                  <!-- In the present times where DC vs marvel rivalry brings in the perfect ammunition to the never dying flame of our craze for superheroes that are presented in a reel or a silver screen of a cinema theatre and we try to ambush and enjoy the glorification of those fictional characters, we often tend to forget that the real world in times like now with some of the most severe problems like climate change, nuclear world war, ecosystem imbalances, Deforestation, Biodiversity loss and many more……  we need heroes too and we ourselves have to become heroes of our society too.<br> <br>  Ya, the heroes that the society needs right now has to come up from ourselves, our society. As we believe , change could be brought only by changing the person by waking up the hero that lives within each of us and give them the superpowers. That superpower is nothing but a choice , a small choice in our daily life that can impact the world. While designing this website, we always argued that how can we make an impact to the world through this website and thus even this short fun quiz has a goal to hit. Quizzo is a alarm-clock that wants to wake up the superhero inside us, which superhero – that will depend on the choices you will make. At the end of the quiz, we have a very simple request which you are bounded to fulfill (Don’t forget that “with great powers come great responsibilities”). Since you are a superhero now, bring a change , do something good for the society and we will feature you and your contribution in our “Hall of Fame” that will inspire more to come forward and be a part of this movement -->
+                </div>
+
+
+                <div class="quiz">
+
+                  
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 1</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p> What do you think is the best quality a man can have ? </p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q1_r1" id="q1_r1" value="r1">
+                          <label class="form-check-label" for="q1_r1">
+                            Compassion for the abandoned
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q1" id="q1_r2" value="r2">
+                          <label class="form-check-label" for="q1_r2">
+                            standing up when they see injustice around.   
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q1" id="q1_r3" value="r3">
+                          <label class="form-check-label" for="q1_r3">
+                            Love for mother nature
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q1" id="q1_r4" value="r4">
+                          <label class="form-check-label" for="q1_r4">
+                            The quality of putting others before themself.
+                          </label>
+                        </div>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 2</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>What would you do if one of your old school friends called you at midnight and just managed to ask you to come to a location before his/her phone went dead.</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2_r1" value="r1">
+                          <label class="form-check-label" for="q2_r1">
+                            Wish you didn't pick up
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2_r2" value="r2">
+                          <label class="form-check-label" for="q2_r2">
+                            Call the police and inform them there is something wrong.
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2_r3" value="r3">
+                          <label class="form-check-label" for="q2_r3">
+                            Go yourself and check what's the matter
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q2" id="q2_r4" value="r4">
+                          <label class="form-check-label" for="q2_r4">
+                            You are a heavy sleeper so there is no way you would have picked the call at midnight
+                          </label>
+                        </div>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 3</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>What do you think needs immediate help if you see the following while your way home? </p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3_r1" value="r1">
+                          <label class="form-check-label" for="q3_r1">
+                            Injured puppy in a field 
+
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q2_r2" value="r2">
+                          <label class="form-check-label" for="q3_r2">
+                            Your neighborhood Old granny or grandpa
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3_r3" value="r3">
+                          <label class="form-check-label" for="q3_r3">
+                            A blind beggar
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q3" id="q3_r4" value="r4">
+                          <label class="form-check-label" for="q3_r4">
+                            Your friend in trouble
+                          </label>
+                        </div>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 4</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>If you could learn a new thing, what would it be? </p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4_r1" value="r1">
+                          <label class="form-check-label" for="q4_r1">
+                            I always wanted to learn music
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q2_r2" value="r2">
+                          <label class="form-check-label" for="q4_r2">
+                            Fighting or defense techniques
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4_r3" value="r3">
+                          <label class="form-check-label" for="q4_r3">
+                            I don't have time for it. I have to look after my pet
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q4" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q4_r4">
+                            Gardening so that i can have a huge beautiful garden when i have my own villa
+                          </label>
+                        </div>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 5</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p> What good deed would you like to do on a weekend?</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Feed stray dogs and cats
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Spend a day with homeless old-age people and give them happiness in whatever way possible.
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            Meet, discuss and help to protect the trees with a bunch of environmentalists.
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                            Give a free training session of self-defense for womens.
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 6</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>If you have only 30 minutes before a uncertain blackout after which you will vanish from the world, what will you do?</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Do something evil because its the edge you are standing right now
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Make a impactful choice that will help the future life/humans
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            Write all your life experiences for the next generation
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                           Do nothing and just reflect on your life choices
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 7</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>Which is your favorite movie?</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Major
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Gulaab Gang
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            777 Charlie
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                            I haven't heard these movie names before!
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 8</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>If you could change one thing about your character, what would it be?</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Your sensitive self even if that gives you a edge over others in noticing the small details about reality
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Your reckless decisions even if they proved to be helpful in the past
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            Your overworking nature that gives you results
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                            Your truthfulness that hurt your own life
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 9</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>How would your friends describe you?</p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Caring
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Loyal
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            I have no friends
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                            Strong
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <div class="card border-info mb-4">
+                  
+                      <div class="card-header bg-info text-white">
+                        <span>Question 10</span>
+                  
+                      </div>
+                  
+                      <div class="card-body">
+                        <p>According to you which of the following global problems needs immediate attention and action. </p>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
+                          <label class="form-check-label" for="q5_r1">
+                            Deforestation
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
+                          <label class="form-check-label" for="q5_r2">
+                            Increasing sexual assaults on women
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
+                          <label class="form-check-label" for="q5_r3">
+                            Terrorist attacks 
+                          </label>
+                        </div>
+                  
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
+                          <label class="form-check-label" for="q5_r4">
+                            I am the one who needs help now.
+                          </label>
+                        </div>
+                  
+                      </div>           
+                    </div>
+                    <br><br><br>
+                                <input class="btn btn-primary" type="submit" value="Submit">
+
+                </div>
+
+                
+
+            </div>
+            
+
+                    <div class="part2">
+                        <div class="bird"><img src="fly3.gif"></div>
+                        <div class="superwoman"><img src="real heroes.jpg"></div>
+                        <div class="real_hero"><img src="hero2.png"></div>
+                    </div>
+            </div>          
+
+            <Section class="end">
+      
+              <div class="endbox">
+                      <h3><i class="fa-solid fa-ghost"></i>&nbsp;Stalk Us At</h3>
+                      <hr>
+                      <br>
+                      <ul>
+                            <li><a href="https://www.instagram.com/secreta_inc/"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn: Secreta club </a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter-square"></i>&nbsp;Twitter: Secreta </a></li>
+                            <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
+                            <br><br><br>
+                          <div class="subsribe">
+                            <a href="mailto:incsecreta@gmail.com">CONTACT US</a>
+                          </div>  
+                          </ul>
+                          <div class="cloud"><img src="cloud1.png"></div>
+               </div>
+              <div class="circlesbox">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <br><br><br><br><br>
+              
+            </Section>
+
+        
+
+    
+   </body>
+ </html>
+
