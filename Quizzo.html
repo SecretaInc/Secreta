@@ -259,7 +259,7 @@
             .rightside {
                 padding-top: 2%;
                 padding-left: 2%;
-                width: 55%;
+                width: 58%;
                 min-height: 100%;
                 float: left;
                 display: block;
@@ -503,7 +503,7 @@
             text-transform: uppercase;
             }
             .part2{
-                width: 26%;
+                width: 23%;
                 padding-top: 1%;
                 margin: 0;
                 box-sizing: border-box;
@@ -533,22 +533,37 @@
                 padding-top: 4%
 
             }
-            .card-header.bg-info.text-white {
+            #form1 h3{
               background:  linear-gradient(to right top, #3b5d6b, #325362,#325362, #294a58, #21414f,#21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0c1011);
-              color: wheat;
+              color: white;
               font-size: 1.5rem;
               font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              padding: 1rem;
+              margin-bottom: 0;
             }
-            .card-body{
+            #form1 p{
               background-color: peachpuff;
               font-size: 1.3rem;
               font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
               border: 0.1rem solid #2c6a79;
+              padding: 1rem 1rem 1rem 1rem;
+              margin: 0;
             }
-            .card.border-info.mb-4 {
-              background-color: transparent;
-              border: 0rem solid #000000;
+            .result{
+              background-color: peachpuff;
+              font-size: 2rem;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              padding: 1rem;
+              border: 0.2rem solid #2c6a79;
+              color:#2c6a79;
             }
+            .result span{
+              margin: 0;
+              padding: 0;
+              font-size: 1.7rem;
+              color:#122e35;
+            }
+            
             .superwoman {
                 width: 94%;
                 margin: auto;
@@ -562,7 +577,7 @@
               margin-top:20rem
             }
             
-            .btn.btn-primary  {
+            .btn-primary  {
                 background-color: rgba(51, 81, 163, 0.76);
                 font-size: 2rem;
                 width: 10rem;
@@ -1017,422 +1032,164 @@
                 </div>
 
 
-                <div class="quiz">
+                <div class="quiz" id="quiz">
+                  <form  id="form1">
+                    <h3>Question 1</h3>
+                    <p> What do you think is the best quality a man can have?<br><br>
+                    <label><input type="radio" name="qs1" id="young" value="2" required/> a)	Compassion for the abandoned.</label><br>
+                    <label><input type="radio" name="qs1" id="mid" value="4" /> b) standing up when they see injustice around </label><br>
+                    <label><input type="radio" name="qs1" id="old" value="3" /> c) Love for mother nature </label><br>
+                    <label><input type="radio" name="qs1" id="oldest" value="5" /> d) The quality of putting others before themself.</label></p><br>
 
-                  
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 1</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p> What do you think is the best quality a man can have ? </p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q1_r1" id="q1_r1" value="r1">
-                          <label class="form-check-label" for="q1_r1">
-                            Compassion for the abandoned
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q1" id="q1_r2" value="r2">
-                          <label class="form-check-label" for="q1_r2">
-                            standing up when they see injustice around.   
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q1" id="q1_r3" value="r3">
-                          <label class="form-check-label" for="q1_r3">
-                            Love for mother nature
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q1" id="q1_r4" value="r4">
-                          <label class="form-check-label" for="q1_r4">
-                            The quality of putting others before themself.
-                          </label>
-                        </div>
-                  
-                      </div>
-                  
-                    </div>
-                  
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 2</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>What would you do if one of your old school friends called you at midnight and just managed to ask you to come to a location before his/her phone went dead.</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q2" id="q2_r1" value="r1">
-                          <label class="form-check-label" for="q2_r1">
-                            Wish you didn't pick up
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q2" id="q2_r2" value="r2">
-                          <label class="form-check-label" for="q2_r2">
-                            Call the police and inform them there is something wrong.
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q2" id="q2_r3" value="r3">
-                          <label class="form-check-label" for="q2_r3">
-                            Go yourself and check what's the matter
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q2" id="q2_r4" value="r4">
-                          <label class="form-check-label" for="q2_r4">
-                            You are a heavy sleeper so there is no way you would have picked the call at midnight
-                          </label>
-                        </div>
-                  
-                      </div>
-                  
-                    </div>
-                  
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 3</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>What do you think needs immediate help if you see the following while your way home? </p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q3" id="q3_r1" value="r1">
-                          <label class="form-check-label" for="q3_r1">
-                            Injured puppy in a field 
+                    <h3>Question 2</h3>
+                    <p> What would you do if one of your old school friends called you at midnight and just managed to ask you to come to a location before his/her phone went dead.<br><br>
+                    <label><input type="radio" name="qs2" id="party" value="0" required/> a)Wish you didn't pick up</label><br>
+                    <label><input type="radio" name="qs2" id="rock" value="5" /> b) Call the police and inform them there is something wrong	</label><br>
+                    <label><input type="radio"  name="qs2" id="beer" value="6" /> c) Go yourself and check what's the matter </label><br>
+                    <label><input type="radio" name="qs2" id="oldest" value="0" /> d) You are a heavy sleeper so there is no way you would have picked the call at midnight.</label></p><br>
 
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q3" id="q2_r2" value="r2">
-                          <label class="form-check-label" for="q3_r2">
-                            Your neighborhood Old granny or grandpa
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q3" id="q3_r3" value="r3">
-                          <label class="form-check-label" for="q3_r3">
-                            A blind beggar
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q3" id="q3_r4" value="r4">
-                          <label class="form-check-label" for="q3_r4">
-                            Your friend in trouble
-                          </label>
-                        </div>
-                  
-                      </div>
-                  
-                    </div>
-                  
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 4</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>If you could learn a new thing, what would it be? </p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q4" id="q4_r1" value="r1">
-                          <label class="form-check-label" for="q4_r1">
-                            I always wanted to learn music
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q4" id="q2_r2" value="r2">
-                          <label class="form-check-label" for="q4_r2">
-                            Fighting or defense techniques
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q4" id="q4_r3" value="r3">
-                          <label class="form-check-label" for="q4_r3">
-                            I don't have time for it. I have to look after my pet
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q4" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q4_r4">
-                            Gardening so that i can have a huge beautiful garden when i have my own villa
-                          </label>
-                        </div>
-                  
-                      </div>
-                  
-                    </div>
-                  
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 5</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p> What good deed would you like to do on a weekend?</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Feed stray dogs and cats
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Spend a day with homeless old-age people and give them happiness in whatever way possible.
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            Meet, discuss and help to protect the trees with a bunch of environmentalists.
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                            Give a free training session of self-defense for womens.
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 6</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>If you have only 30 minutes before a uncertain blackout after which you will vanish from the world, what will you do?</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Do something evil because its the edge you are standing right now
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Make a impactful choice that will help the future life/humans
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            Write all your life experiences for the next generation
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                           Do nothing and just reflect on your life choices
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 7</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>Which is your favorite movie?</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Major
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Gulaab Gang
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            777 Charlie
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                            I haven't heard these movie names before!
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 8</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>If you could change one thing about your character, what would it be?</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Your sensitive self even if that gives you a edge over others in noticing the small details about reality
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Your reckless decisions even if they proved to be helpful in the past
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            Your overworking nature that gives you results
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                            Your truthfulness that hurt your own life
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 9</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>How would your friends describe you?</p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Caring
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Loyal
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            I have no friends
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                            Strong
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <div class="card border-info mb-4">
-                  
-                      <div class="card-header bg-info text-white">
-                        <span>Question 10</span>
-                  
-                      </div>
-                  
-                      <div class="card-body">
-                        <p>According to you which of the following global problems needs immediate attention and action. </p>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r1" value="r1">
-                          <label class="form-check-label" for="q5_r1">
-                            Deforestation
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r2" value="r2">
-                          <label class="form-check-label" for="q5_r2">
-                            Increasing sexual assaults on women
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q5_r3" value="r3">
-                          <label class="form-check-label" for="q5_r3">
-                            Terrorist attacks 
-                          </label>
-                        </div>
-                  
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="q5" id="q4_r4" value="r4">
-                          <label class="form-check-label" for="q5_r4">
-                            I am the one who needs help now.
-                          </label>
-                        </div>
-                  
-                      </div>           
-                    </div>
-                    <br><br><br>
-                                <input class="btn btn-primary" type="submit" value="Submit">
+                    <h3>Question 3</h3>
+                    <p> What do you think needs immediate help if you see the following while your way home?<br><br>
+                    <label><input type="radio" name="qs3" id="rock2" value="1" required/> a)	Injured puppy in a field </label><br>
+                    <label><input type="radio" name="qs3" id="indie" value="2" /> b)	Your neighborhood Old granny or grandpa </label><br>
+                    <label><input type="radio" name="qs3" id="country" value="0" /> c)	A blind beggar</label><br>
+                    <label><input type="radio" name="qs3" id="oldest" value="6" /> d)	Your friend in trouble who has been getting voilent threats. </label></p><br>
 
+                    <h3>Question 4</h3>
+                    <p> If you could learn a new activity, what would it be <br><br>
+                    <label><input type="radio" name="qs4" id="rock2" value="0" required/> a)	I always wanted to learn music </label><br>
+                    <label><input type="radio" name="qs4" id="indie" value="4" /> b)	Fighting or defense techniques </label><br>
+                    <label><input type="radio" name="qs4" id="country" value="1" /> c)	I don't have time for it. I have to look after my pet </label><br>
+                    <label><input type="radio" name="qs4" id="oldest" value="3" /> d)	Gardening so that i can have a huge garden when i have my own villa </label></p><br>
+
+                    <h3>Question 5</h3>
+                    <p> What good deed would you like to do on a weekend?<br><br>
+                    <label><input type="radio" name="qs5" id="rock2" value="1" required/> a)	Feed stray dogs and cats </label><br>
+                    <label><input type="radio" name="qs5" id="indie" value="2" /> b)	Spend a day with homeless old-age people and give them happiness in whatever way possible </label><br>
+                    <label><input type="radio" name="qs5" id="country" value="3" /> c)	Meet, discuss and help to protect the trees with a bunch of environmentalists </label><br>
+                    <label><input type="radio" name="qs5" id="oldest" value="4" /> d)	Give a free training session of self-defense for women </label></p><br>
+
+                    <h3>Question 6</h3>
+                    <p> If you have only 30 minutes before a uncertain blackout after which you will vanish from the world, what will you do? <br><br>
+                    <label><input type="radio" name="qs6" id="rock2" value="0" required/> a) Do something evil because its the edge you are standing right now </label><br>
+                    <label><input type="radio" name="qs6" id="indie" value="3" /> b) Make a impactful choice that will help the future life/humans </label><br>
+                    <label><input type="radio" name="qs6" id="country" value="6" /> c) Do heroic actions like catching criminals  </label><br>
+                    <label><input type="radio" name="qs6" id="oldest" value="0" /> d)	Do nothing and just reflect on your life choices </label></p><br>
+
+                    <h3>Question 7</h3>
+                    <p> Which is your favorite movie? <br><br>
+                    <label><input type="radio" name="qs7" id="rock2" value="5" required/> a) Major </label><br>
+                    <label><input type="radio" name="qs7" id="indie" value="4" /> b) Gulaab Gang </label><br>
+                    <label><input type="radio" name="qs7" id="country" value="1" /> c) 777 Charlie  </label><br>
+                    <label><input type="radio" name="qs7" id="oldest" value="0" /> d) I haven’t heard these movie names before! </label></p><br>
+
+                    <h3>Question 8</h3>
+                    <p> If you could change one thing about your character, what would it be? <br><br>
+                    <label><input type="radio" name="qs8" id="rock2" value="2" required/> a) Your sensitive self even if that gives you a edge over others in noticing the small details about reality  </label><br>
+                    <label><input type="radio" name="qs8" id="indie" value="5" /> b) Your reckless decisions even if they proved to be helpful in the past </label><br>
+                    <label><input type="radio" name="qs8" id="country" value="3" /> c) Your overworking nature that gives you results  </label><br>
+                    <label><input type="radio" name="qs8" id="oldest" value="0" /> d)	Your truthfulness that hurt your own life  </label></p><br>
+
+                    <h3>Question 9</h3>
+                    <p> How would your friends describe you? <br><br>
+                    <label><input type="radio" name="qs9" id="rock2" value="1" required/> a) Caring </label><br>
+                    <label><input type="radio" name="qs9" id="indie" value="6" /> b) Loyal </label><br>
+                    <label><input type="radio" name="qs9" id="country" value="0" /> c) I have no friends </label><br>
+                    <label><input type="radio" name="qs9" id="oldest" value="6" /> d)	Strong </label></p><br>
+
+                    <h3>Question 10</h3>
+                    <p> According to you which of the following global problems needs immediate attention and action.<br><br>
+                    <label><input type="radio" name="qs10" id="rock2" value="0" required/> a) I am the one who needs help now.  </label><br>
+                    <label><input type="radio" name="qs10" id="indie" value="3" /> b) Deforestation </label><br>
+                    <label><input type="radio" name="qs10" id="country" value="4" /> c)	Increasing sexual assaults on women </label><br>
+                    <label><input type="radio" name="qs10" id="oldest" value="5" /> d) Terrorist attacks  </label></p><br>
+                    
+                    <br>
+                    <button class="btn-primary" type="submit" value="Submit">Submit</button>
+
+                    </form>
+
+                    
+                    
                 </div>
+                
+                
+                <div class ="result">
+                   Result:&nbsp; <span id="answer2"></span>
+                  </div>
+                <!-- <p id="answer3"></p> -->
+          
+                <script>
+                  document.getElementById("form1").onsubmit=function() {
+
+                  Q1 = parseInt(document.querySelector('input[name = "qs1"]:checked').value);
+                  Q2 = parseInt(document.querySelector('input[name = "qs2"]:checked').value);
+                  Q3 = parseInt(document.querySelector('input[name = "qs3"]:checked').value);
+                  Q4 = parseInt(document.querySelector('input[name = "qs4"]:checked').value);
+                  Q5 = parseInt(document.querySelector('input[name = "qs5"]:checked').value);
+                  Q6 = parseInt(document.querySelector('input[name = "qs6"]:checked').value);
+                  Q7 = parseInt(document.querySelector('input[name = "qs7"]:checked').value);
+                  Q8 = parseInt(document.querySelector('input[name = "qs8"]:checked').value);
+                  Q9 = parseInt(document.querySelector('input[name = "qs9"]:checked').value);
+                  Q10 = parseInt(document.querySelector('input[name = "qs10"]:checked').value);
+
+                  
+  
+                  // total = Q1 + Q2 + Q3 + Q4 + Q5;
+                  // document.getElementById("answer").innerHTML = total;
+              
+              const array = [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10];      
+              var count0=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 0){count0++}
+              }
+
+              var count1=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 1){count1++}
+              }
+
+              var count2=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 2){count2++}
+              }
+
+              var count3=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 3){count3++}
+              }
+
+              var count4=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 4){count4++}
+              }
+
+              var count5=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 5){count5++}
+              }
+
+              var count6=0;
+              for(i = 0; i < array.length; i++){
+                  if(array[i] == 6){count6++}
+              }
+              
+              let count= Math.max(count0, count1, count2, count3, count4, count5, count6);
+              // document.getElementById("answer3").innerHTML = count;
+
+              
+              if(count == count6){document.getElementById("answer2").innerHTML = "You are brave like Shershaah";}
+              else if(count == count5){document.getElementById("answer2").innerHTML = "You are brave like Sandeep Unnikrishnan";}
+              else if(count == count4){document.getElementById("answer2").innerHTML = "You are inspirint like Usha Vishwakarma who stands up when she sees injustice around her and has trained self defense to many young women";}
+              else if(count == count3){document.getElementById("answer2").innerHTML = "You are a nature lover like Jadav Payeng who has planted an entire forest";}
+              else if(count == count2){document.getElementById("answer2").innerHTML = "You are like Ravi kalra who has build a old age shelter home for the abondened";}
+              else if(count == count1){document.getElementById("answer2").innerHTML = "You are a kind and a pet lover.You could be like Rakesh Shukla who has given shelter and food to many abondended street dogs";}
+              else if(count == count0){document.getElementById("answer2").innerHTML = "You are a couch potato";}
+
+              // count0=0; count1=0; count2=0; count3=0; count4=0; count5=0; count6=0;
+                  return false; // required to not refresh the page; just leave this here
+                  }// end the submit function
+              </script>
 
                 
 
