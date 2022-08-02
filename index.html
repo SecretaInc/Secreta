@@ -646,6 +646,14 @@
               background-color: rgb(245, 213, 171);
               color: #223855;
             }
+            .myBtn1 a{
+              color: #223855;
+              text-decoration: none;
+            }
+            .myBtn a {
+              color: rgb(245, 213, 171);
+              text-decoration: none;
+            }
             #myBtn {
               float:right;
               background-color: #223855;
@@ -1232,7 +1240,7 @@
                 <div class="nav_mobile">
                     <ul>
                       <li class="active"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
-                      <li><a href="#area1"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                      <li><a href="Stories.html"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
                       <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                       <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write To Us</a></li> -->
                       <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
@@ -1283,7 +1291,7 @@
               <div class="nav">
                 <ul>
                     <li class="active"><a href="#"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
-                    <li><a href="#area1"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                    <li><a href="Stories.html"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
                     <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
                     <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
                     <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
@@ -1355,27 +1363,20 @@
               <h6>Story 1</h6>
               <hr>
               <h5>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. <span id="dots1">...</span><span id="more1" style="display: none;"> Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.</span> 
+                  <p><i> "Though I can't change what happened, I can choose how to react. And I don't want to spend the rest of my life being bitter and locked up. Past the mission, I smell the roses"</i>
+                  -Tori Amos</p>
+                  <p>Before I start-off with this confession, I have a point 
+                  that I want everyone to be note:If any girl or a child is alone then it's not opportunity but it is our responsibility, and we are 
+                  responsible for their safety (repeating the same thing) because, some of us in this world are inhumane and evil enough to feed over 
+                  the innocence to satisfy the darkness inside. Thus, if you find any such victim or know about that devil, please take steps and ensure
+                  that innocence does not die.</p>
+                  
+                  <p>This story is an account of the tragic event deeply embedded in my past, from the period that dates back to when I was a kid/child...</p>
+                  
               </h5>
-              <button onclick="myFunction1()" id="myBtn1">Read more</button>
               
-              <script>
-                function myFunction1() {
-                  var dots1 = document.getElementById("dots1");
-                  var moreText = document.getElementById("more1");
-                  var btnText = document.getElementById("myBtn1");
-
-                  if (dots1.style.display === "none") {
-                    dots1.style.display = "inline";
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                  } else {
-                    dots1.style.display = "none";
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                  }
-                }
-            </script>
+              <button class="myBtn1" id="myBtn1"><a href="Stories.html#Story1">Read more</a></button>
+              
             </div>
             <div class="content2">
               <img src="child.jpg">
@@ -1397,26 +1398,9 @@
               <h5>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.<span id="dots">...</span><span id="more">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span>
               </h5>
-              <button onclick="myFunction()" id="myBtn">Read more</button>
+              <button class="myBtn" id="myBtn"><a href="Stories.html#Story2">Read more</a></button>
 
-              <script>
-              function myFunction() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
-
-                if (dots.style.display === "none") {
-                  dots.style.display = "inline";
-                  btnText.innerHTML = "Read more"; 
-                  moreText.style.display = "none";
-                } 
-                else {
-                  dots.style.display = "none";
-                  btnText.innerHTML = "Read less"; 
-                  moreText.style.display = "inline";
-                }
-              }
-              </script>
+            
               <!-- <h5>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
               </h5> -->
@@ -1453,9 +1437,9 @@
                     <hr>
                     <br>
                     <ul>
-                          <li><a href="https://www.instagram.com/secreta_inc/"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
-                          <li><a href="#"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn: Secreta club </a></li>
-                          <li><a href="#"><i class="fa-brands fa-twitter-square"></i>&nbsp;Twitter: Secreta </a></li>
+                          <li><a href="https://www.instagram.com/secreta_inc/" target="_blank"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
+                          <li><a href="https://www.linkedin.com/in/secreta-inc-290b73246/" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn: Secreta club </a></li>
+                          <li><a href="https://www.facebook.com/Secreta-107793882025092" target="_blank"><i class="fa-brands fa-square-facebook"></i>&nbsp;Facebook: Secreta </a></li>
                           <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
                           <br><br><br>
                         <div class="subsribe">

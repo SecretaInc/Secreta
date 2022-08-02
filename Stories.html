@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/4891213735.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+       <style>
+             html{
+            font-size: 10px; /* to change the root size from the default 1 rem=16px to 1rem=10px*/
+            scroll-behavior: smooth;
+            }
+            h1 {
+                /* background-color: rgb(193, 186, 186); */
+                color: rgb(235, 228, 228);
+                background-color: burlywood;
+                /* font-size: 3rem; */
+                font-size: 8rem;
+                padding-top: 2%;
+                padding-left: 3%;
+                padding-right: 5%;
+                font-family: 'Times New Roman';
+                font-weight: 550;
+                background-image: linear-gradient( -65deg, transparent 0, transparent 5%, rgb(253, 253, 253) 10%, rgb(255, 255, 255) 15%, transparent 10%, transparent 100%);
+                background-size: 200% 100%;
+                animation: animate 10s linear infinite;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                
+            }
+            @keyframes animate {
+                0%
+                {
+                    background-position: -500%;
+                }
+                100%
+                {
+                    background-position: 500%;
+                }
+            }
+            h3{
+                font-size: 2.5rem;
+                /* font-family: Georgia, 'Times New Roman', Times, serif; */
+                font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                color: rgb(40, 81, 86);
+            }
+            h4{
+                font-size: 1.5rem;
+                /* font-family: Georgia, 'Times New Roman', Times, serif; */
+                font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                /* color: rgba(255, 162, 13, 0.94); */
+                color: rgba(21, 1, 1, 0.578);
+            }
+            body {
+            /* background-color: #EABBBB; */
+            background-color: rgb(235, 228, 228);
+            padding: 0;
+            margin: 0;
+            }
+            .upper {
+                background-image: linear-gradient(to right top, #3b5d6b, #325362, #294a58, #21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011);
+                width: 100%;
+                min-height: 20rem;
+                display: flex;
+            }
+            .upper_right{
+              width: 59%;
+            }
+            .contain1 {
+                width: 50%;
+                height: 50%;
+                bottom: 0%;
+                float: right;
+                justify-content: flex-end;
+                align-self: flex-end;
+            }
+            .contain1 ul  {
+                display: inline-flex;
+                justify-content: right;
+                list-style: none;
+                /* color: seashell; */
+                width: 90%;
+                margin: 2% 0% 0% 0%;
+                padding: 0 0 0 2%;
+            }
+            .contain1 ul li{
+                min-width: 10%;
+                /* margin: 0.1rem 1%; */
+                padding: 1.3% 0;
+                text-align: center;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .contain1 ul li a {
+                font-size: 2.2rem;
+                text-decoration: none;
+                color: rgb(185, 170, 141);
+                padding: 5% 0;
+            }
+            .contain1 ul li a:hover {
+                color: burlywood;
+                font-size: 2.5rem;
+                /* border-bottom: 0.1rem solid burlywood; */
+            }
+            .nav {
+                width: 100%;
+                height: fit-content;
+                float: left;
+                /* justify-content: flex-end; */
+                /* align-self: flex-end; */
+                /* margin: 0%;
+                padding: 0%; */
+            }
+            .nav ul  {
+                display: inline-flex;
+                justify-content: left;
+                list-style: none;
+                /* color: seashell; */
+                width: 90%;
+                margin: 4% 0% 0% 4%;
+                padding: 0 2%;
+                font-family: Rockwell,'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+                /* font-family: Copperplate, "Copperplate Gothic Light", fantasy; */
+                /* text-decoration: underline; */
+                font-size: 1.8rem;
+
+            }
+            
+            .nav ul li{
+                min-width: 16%;
+                margin: 0.1rem 1%;
+                padding: 1.3% 2%;
+                text-align: center;
+                /* background: rgb(0, 0, 0, 0.4); */
+                box-sizing: border-box;
+
+            }
+            .nav ul li a {
+                text-decoration: none;
+                /* color: rgb(168, 161, 148); */
+                color: rgb(185, 170, 141);
+                /* color: bisque; */
+                /* color: rgb(214, 194, 142); */
+                padding: 5% 0;
+                
+            }
+            .active a {
+              border-bottom: 0.1rem solid burlywood;
+            }
+            .active,
+            .nav ul li:hover {
+                background: rgb(0, 0, 0, 0.4);
+                border-radius: 0.3rem;
+            }
+            .nav ul li a:hover{
+                color: burlywood;
+                border-bottom: 0.1rem solid burlywood;
+            }
+            .unit1 {
+              width: 41%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .logo{
+              float:left;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                margin-right: 2.5%;
+                margin-left: 9%;
+                width: 22%;
+                box-sizing: border-box;
+            }
+            .logo img {
+                width: 100%;
+                border-radius: 10rem;
+                border: 0.1rem solid black;
+            }
+            .logo img:hover {
+              border: 0.2rem solid black;
+              cursor: grab;
+            }
+            .text {
+              padding-top: 4%;
+                width: 66.5%;
+                float: top left;
+                text-align: center;
+                /* padding-left: 3%; */
+                /* position: relative; */
+                /* display: grid; */
+                /* padding-right: 5%; */
+            }
+            .front {
+                width: 100%;
+                min-height: 70rem; 
+                height: fit-content;
+                overflow: hidden;
+                display: inline-flex;
+                align-items: stretch
+            }
+            .leftside {
+                background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
+                width: 19%;
+                /* max-height: 322rem; */
+                /* min-height: 70rem; */
+                float: left;
+                padding-top: 1%;
+                min-height: 100%;
+                overflow: hidden;
+                display: table-cell;
+            }       
+            .btn.btn-primary1 a  {
+          /* margin: 5% 0 0 5%; */
+          /* background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12); */
+          color:rgb(235, 228, 228);
+          /* background-color: rgb(235, 228, 228);
+          color:#0f3343; */
+          font-size: 2.5rem;
+          font-family: 'Times New Roman';
+          font-weight: 550;
+          /* border: 0.1rem solid #0d2c3a ; */
+          /* border-radius: 1rem; */
+          box-sizing: border-box;
+          /* box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7); */
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+        .btn.btn-primary1 {
+          margin: 5% auto 0 auto;
+          background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+          color:rgb(235, 228, 228);
+          /* background-color: rgb(235, 228, 228);
+          color:#0f3343; */
+          font-size: 2.5rem;
+          font-family: 'Times New Roman';
+          font-weight: 550;
+          border: 0.1rem solid #0d2c3a ;
+          border-radius: 1rem;
+          box-sizing: border-box;
+          box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+          text-transform: capitalize;
+          display: flex;
+          align-self: center;
+        }
+          .btn.btn-primary1:hover{
+            /* width: 80%; */
+            background-image: linear-gradient(to right,#251016,#431523, #641830, #641830, #86183b, #86183b);
+            color: peachpuff;
+            transition: 1s;
+            font-size: 2.0rem;
+          }   
+          .btn.btn-primary2 {
+            display: none;
+          }
+            .superhero {
+                width: 100%;
+                /* overflow: hidden; */
+            }
+            .superhero img {
+                width: 100%;
+               
+            }
+            .last_vine{
+              width: 100%;
+              height: 20rem;
+              overflow: hidden;
+            }
+            .last_vine img {
+                width: 100%;
+            }
+            .mob, .mob1 {
+              display: none;
+            }
+            .rightside {
+                width: 81%;
+                min-height: 100%;
+                float: left;
+                display: block;
+                box-sizing: border-box;
+                margin: 0%;
+                display: table-cell;
+            }
+            .intro{
+              /* background-image: linear-gradient(to right top, #3b5d6b, #325362, #294a58, #21414f, #183846, #14323e, #112b36, #0d252f, #0e2027, #0f1b1f, #0e1618, #0c1011); */
+              background-color: rgb(230, 219, 219);
+              /* margin: 2% ; */
+              /* border-radius: 2rem 0 2rem 0; */
+              text-align: justify;
+              padding: 2%;
+              font-family:  Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+              font-size: 1.8rem;
+              font-weight: 500;
+              /* overflow: hidden; */
+              /* color: peachpuff; */
+              border: 0.1rem solid #ccc;
+              /* box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2); */
+              box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.6);
+            }
+            .intro {
+                /* background: #fff; */
+                /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+                /* margin: 26px auto 0; */
+                /* max-width: 550px; */
+                /* min-height: 300px; */
+                /* padding: 24px; */
+                position: relative;
+                width: 94%;
+                margin: 2% auto;
+              }
+              .intro:before, .intro:after {
+                content: "";
+                height: 100%;
+                position: absolute;
+                width: 98%;
+                z-index: -1;
+              }
+              .intro:before {
+                background:  rgb(230, 219, 219);
+                /* box-shadow: 0 0 0.8rem rgba(0,0,0,0.4); */
+                box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.4);
+                left: 0rem;
+                /* right: 5px; */
+                top: 0rem;
+                transform: rotate(-0.6deg);
+              }
+              .intro:after {
+                background:  rgb(230, 219, 219);
+                /* box-shadow: 0 0 0.3rem rgba(0,0,0,0.4); */
+                box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.3);
+                right: -0.3rem;
+                top: -0.6rem;
+                transform: rotate(0.6deg);
+              }
+
+            .header{
+              /* position: relative; */
+              font-family: 'Playfair Display', serif;
+              font-weight: 900;
+              font-size: 6rem;
+              text-transform: uppercase;
+              display: inline-block;
+              line-height: 7.2rem;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              width: 100%;
+              text-align: center;
+
+          }
+        p{
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        .head{
+            text-align: center;
+            position: relative;
+
+
+        }
+
+        .headerobjectswrapper{
+        }
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid #2f2f2f;
+    border-top: 0.2rem solid #2f2f2f;
+    padding: 1.2rem 0 1.2rem 0;
+
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 3rem 2% 0 2%;
+
+
+}
+.collumns{
+    width: 100%;
+    display: flex;
+}
+.collumn:first-child, .collumn1:nth-child(2) {
+    width: 66%;
+}
+.collumn:nth-child(2), .collumn1:nth-child(1) {
+    width: 33%;
+}
+.collumn, .collumn1{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: Avro;
+    /* width: 33%; */
+    /* display: flex */
+    padding: 0 1% 2% 1%;
+    vertical-align: top;
+    /* margin-bottom: 5rem; */
+    /* transition: all .7s; */
+}
+
+.collumn + .collumn, .collumn1 + .collumn1{ 
+  border-left: 0.1rem solid #2f2f2f;
+}
+.collumn .headline, .collumn1 .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+   
+
+}
+.figcaption{
+    text-align: center;
+	font-style: italic;
+	font-size: 1.3rem;
+}
+
+.collumn .headline.hl3, .collumn1 .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.6rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl4, .collumn1 .headline.hl4{
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl4:before, .collumn1 .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after, .collumn1 .headline.hl4:after{
+    border-bottom: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 10rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5, .collumn1 .headline.hl5 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl6, .collumn1 .headline.hl6{
+    font-weight: 600;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+}
+.collumn .headline.hl6:before, .collumn1 .headline.hl6:before{
+    border-top: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 12rem;
+    height: 0.7rem;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after, .collumn1 .headline.hl6:after{
+    border-bottom: 0.1rem solid #2f2f2f;
+    content: '';
+    width: 12rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+            .end h3{
+              font-size: 3.5rem;
+              text-decoration: none;
+              padding: 0 2%;
+              font-family: Rockwell, 'Arvo', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+              margin-bottom: 0;
+              color: #294a58;
+              /* margin: 0%; */
+            }
+            .end hr{
+              height: 1.2%;
+              width: 70%;
+              background-color: #294a58;
+              border: 0.5rem solid #294a58;
+              border-radius: 1rem;
+              margin: auto;
+            }
+            .end {
+              width: 100%;
+              background-image: linear-gradient(to bottom, #ef9d4e, #f0a757, #f1b261, #f2bb6c, #f3c577, #f3cb82, #f4d28d, #f5d899, #f5dca6, #f5e0b3, #f5e4c0, #f5e8cd);
+              border-top: 1rem solid #294a58;
+              padding-top: 2%;
+              display:  block;
+              justify-content: center;
+              overflow: hidden;
+            }
+            .endbox {
+              margin: auto;
+              margin-bottom: 0;
+              width: 40%;
+              text-align: center;
+            }
+            .endbox ul{
+              list-style: none;
+
+            }
+            .endbox ul li {
+              margin: 0% 0 0 25%; /*top right bottom left*/
+              width: 100%;
+              text-align: left;
+            }
+            .endbox ul li a{
+              font-family:  "Comic Sans MS", "Comic Sans", cursive;
+              text-decoration: none;
+              font-size: 2.1rem;
+              color:#112b36;
+            }
+            .endbox ul li a:hover {
+              font-size: 2.2rem;
+              background-color: rgba(41, 74,	88, 0.6);
+              color: rgb(235, 228, 228);
+               padding: 0% 1% 0% 1%;
+              /* background-color: rgb(0, 0, 0, 0.2); */
+              /* border: 0.1rem solid rgb(0, 0, 0, 0.4); */
+              transition: 0.2s;
+            }
+            .subsribe {
+              width: 25%;
+              min-height: 6rem;
+              margin: auto;
+              padding: 0rem 3%;
+              background-color: rgb(218, 62, 62);
+              
+              /* background-color: #efaf6a; */
+              font-size: 2.0rem;
+              font-family: rockwell, 'Arvo';
+             display: flex;
+             justify-content: center;
+             border-radius: 1.2rem;
+             box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+             
+            }
+            .subsribe a {
+              margin: auto;
+              color: #122f3b;
+              text-align: center;
+              text-decoration: none;
+            }
+            .subsribe:hover {
+              /* min-width: 30%; */
+              /* background-color: rgb(184, 73, 73); */
+              background-color: #0e3849;
+              padding: auto;
+              /* min-height: 6rem; */
+              /* padding: 1.5rem; */
+              border-radius: 1.2rem;
+              box-shadow: 0 0 0.8rem rgb(0, 0, 0, 1);
+              transition: 1.5s;
+              letter-spacing: 0.5rem;
+              font-size: 2.3rem;
+              
+            animation-name: press;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: normal;
+            }
+            .subsribe a:hover {
+              color: white;
+            }
+            @keyframes press {
+            from{ transform: translateY(0%)}
+            to{ transform: translateY(30%)}
+          } 
+          .cloud {
+            width: 50%;
+            margin: 0%;
+            padding: 0%;
+            animation-name: cloudmove;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: normal;
+          }
+          .cloud img {
+            width: 100%;
+          }
+        @keyframes cloudmove {
+            from{ transform: translateX(-200%)}
+            to{ transform: translateX(350%)}
+        }
+        .circlesbox {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding: 0%;
+          margin: 0%;
+        }
+        .circle {
+          position: relative;
+          /* z-index: 2; */
+
+          box-sizing: border-box;
+          border-bottom: 0.5rem solid whitesmoke;   
+          background: transparent;
+          /* box-shadow: 0 0 0 20px #fff; */
+          width:10%;
+          height: 5rem;
+          border-radius:70%;
+          margin: 0;
+          padding: 0;
+        }
+
+
+
+
+            @media (min-width: 1900px) {
+                html {
+                    font-size: 120%;
+                }
+              }
+            @media (max-width: 998px) {
+                html {
+                    font-size: 50%;
+                }
+              }
+            @media (max-width: 798px) {
+                html {
+                    font-size: 41%;
+                }
+            }
+              @media (max-width: 650px) {
+                html {
+                    /* best for 508px width */
+                    font-size: 38%;
+                }  
+              }
+                @media (max-width: 596px) {
+                html { 
+                    /* best for 508px width */
+                    font-size: 30%;
+                }
+                h1{
+                    font-size: 8.5rem;
+                }
+                h3{
+                  font-size: 3.5rem;
+                  text-align: center;
+                }
+                h5{
+                  font-size: 3.9rem;
+                }
+                .upper{
+                  display: block;
+                  height: fit-content;
+                  overflow: hidden;
+                }
+                .unit1{
+                  display: flex;
+                  width: 100%;
+                }
+                .upper_right {
+                  width: 100%;
+                }
+                .contain1 {
+                  display: none;
+                }
+                .nav ul{
+                  width: 100%;
+                  margin:5% 0 1% 0;
+                  padding: 0;
+                }
+                .nav ul li{
+                  width: 20%;
+                  margin-bottom: 1%;
+                  padding-left: 0;
+                  padding-right: 0;
+                }
+                .logo {
+                  width: 15%;
+                  margin-left: 0%;
+                }
+                .btn.btn-primary1 {
+                  display: none;
+                }
+                .btn.btn-primary2 {
+                  display: block;
+                  /* width: fit-content; */
+                  margin: 2% 7% 5% 7%;
+                  background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12);
+                  color:rgb(235, 228, 228);
+                  /* background-color: rgb(235, 228, 228);
+                  color:#0f3343; */
+                  font-size: 3rem;
+                  font-family: 'Times New Roman';
+                  font-weight: 550;
+                  border: 0.1rem solid #0d2c3a ;
+                  border-radius: 1rem;
+                  box-sizing: border-box;
+                  box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7);
+                  text-transform: capitalize;
+                  
+                }
+                .btn.btn-primary2 a {
+                  /* display: block; */
+                  /* margin: 0% 2% 5% 2%;
+                  background-image: linear-gradient(-45deg , #103d54, #103d54, #103d54, #103d54, #103d54, #19374e,#19374e, #1f3147, #222c40, #23212f, #1e1720,#140e12); */
+                  color:rgb(235, 228, 228);
+                  /* background-color: rgb(235, 228, 228);
+                  color:#0f3343; */
+                  font-size: 2.3rem;
+                  /* line-height: 2.3rem; */
+                  font-family: 'Times New Roman';
+                  /* font-weight: 550; */
+                  /* border: 0.1rem solid #0d2c3a ;
+                  border-radius: 1rem; */
+                  box-sizing: border-box;
+                  /* box-shadow: 0 0 0.8rem rgb(0, 0, 0, 0.7); */
+                  text-transform: capitalize;
+                  text-decoration: none;
+                }
+                .rightside{
+                  width: 79%;
+                  margin-right: 2%;
+                }
+                .card-body{              
+                font-size: 2rem;
+                }
+                .mob {
+                  display: block;
+                  width: 100%;
+                }
+                .mob img {
+                  width: 100%;
+
+                }
+                .leftside {
+                  /* max-height: 530rem; */
+                }
+                .intro{
+                  margin: 2%;
+                  width: 98%;
+                }
+                .intro::before, .intro:after{
+                  display: none;
+                }
+                .header{
+                  font-size: 5.5rem;
+                }
+                .collumns{
+                  display: block;
+                }
+                .collumn + .collumn, .collumn1 + .collumn1 { 
+                  border-left: none;
+                  
+                }
+                .collumn:first-child, .collumn:nth-child(2), .collumn1:nth-child(1), .collumn1:nth-child(2){
+                  width: 100%;
+                  font-size: 2rem;
+                  padding-bottom: 3rem;
+                }
+                /* .collumn:first-child{
+                  border-bottom: 0.1rem solid #2f2f2f;
+                } */
+
+                /* .news {
+                    display: block;
+                } */
+                
+                .subsribe{
+                  width: 30%;
+                }
+                .endbox{
+                  width: 50%;
+                }
+                .endbox ul li {
+                  margin: 0 0 0 10%;
+                }
+                .endbox ul li a{
+                    font-size: 2.0rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+            }
+            @media (max-width: 320px) {
+              .nav ul li:last-child {
+              font-size: 1.6rem;
+            }
+            .mob1{
+              display: contents;
+
+            }
+            .mob {
+              display: none;
+            }
+          }
+
+
+            
+
+        </style>
+  </head>
+    <body>
+        <div class="upper"> 
+
+          <div class="unit1">
+            <div class="logo">
+              <a href= "index.html"><img src ="logo1.png"></a>
+            </div>
+
+            <div class="text">
+                <h1> Stories </h1> 
+            </div> 
+          </div>
+              
+            <div class="upper_right">
+
+            <div class="contain1">
+            <ul>
+              <li><a href="https://www.instagram.com/secreta_inc/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin" target="_blank"></i></a></li>
+              <li><a href="https://www.facebook.com/Secreta-107793882025092" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+              <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a></li>
+            </ul>
+          </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>&nbsp;Home</a></li>
+                    <li class="active"><a href="Stories.html"><i class="fa-brands fa-blogger"></i>&nbsp;Stories</a></li>
+                    <li><a href="Quizzo.html"><i class="fa-brands fa-wpforms"></i>&nbsp;Quizzo</a></li>
+                    <!-- <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write to Us</a></li> -->
+                    <li><a href="About us.html"><i class="fa-solid fa-user-group"></i>&nbsp;About Us</a></li>
+                    <li><a href="Hall of Fame.html"><i class="fa-solid fa-medal"></i>&nbsp;Hall of Fame</a></li>
+                </ul>
+              </div>  
+            </div>
+        </div>
+
+        <div class="front">
+            <div class="leftside"> 
+              <button type="button" class="btn btn-primary1"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7iOG28kEQ8sw-4ZlYEZUu4MToMtGd4dAwL9vv02tAn_drOQ/viewform?usp=sf_link" target="_blank">Share your story</a></button>
+              <button type="button" class="btn btn-primary2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7iOG28kEQ8sw-4ZlYEZUu4MToMtGd4dAwL9vv02tAn_drOQ/viewform?usp=sf_link">Share your story</a></button>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+                <div class="superhero"><img src="vine2.png"></div>
+
+                
+                <!-- <div class="last_vine"><img src="vine2.png"></div> -->
+                <div class="mob">
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  
+                
+
+                </div>
+                <div class="mob1">
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                  <div class="superhero"><img src="vine2.png"></div>
+                </div>
+                <!-- <div class="dog"><img src="cartoon1.png"></div> -->
+            </div>
+
+            <div class="rightside"> 
+
+
+              <div class="intro">
+
+                  <div class="head">
+                      <div class="headerobjectswrapper">
+                          <!-- <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div> -->
+                          <div class="header">Secreta  Times</div>
+                      </div>
+                  
+                      <div class="subhead">August 2022</div>
+                  </div>
+
+                  <div class="content">
+                      <div class="collumns">
+                          <div class="collumn" id="Story1">
+                              <div class="head"><span class="headline hl3">The haunted past</span><p><span class="headline hl4">Story 1</span></p></div>
+                              <img src="child.jpg" style="width: 40%; margin: 0.5rem 0 0 2%" align="right" />
+                              <p><i> "Though I can't change what happened, I can choose how to react. And I don't want to spend the rest of my life being bitter and locked up. Past the mission, I smell the roses"</i>
+                                -Tori Amos</p>
+                              <p>Before I start-off with this confession, I have a point 
+                                that I want everyone to be note:</p>
+                                <p>If any girl or a child is alone then it's not opportunity but it is our responsibility, and we are 
+                                responsible for their safety (repeating the same thing) because, some of us in this world are inhumane and evil enough to feed over 
+                                the innocence to satisfy the darkness inside. Thus, if you find any such victim or know about that devil, please take steps and ensure
+                                that innocence does not die.</p>
+                                
+                                <p>This story is an account of the tragic event deeply embedded in my past, from the period that dates back to when I was a kid/child in 
+                                  the literal expression (probably 7-8 years of age) and having been locked in form of nightmare and horrific memories for years now. I 
+                                  accept that I still haven’t been able to completely let-go-off it and ya, I guess probably never would in the future. </p>
+                                
+                                <p>Beginning with my story, well not really a "story" .... but rather a "real horrific nightmare" experience with a monster that fed on 
+                                 my childhood innocence and left me with lots of scars to hide and heal for the rest of my life.  </p>
+                                
+                                
+                                <p>I need to introduce myself, well not the present me who is penning this down, but the kid me since this shall be a journey of the 
+                                 tragedy that kid faced.</p>
+                                <p>This dates back to 1-st grader me, lively, notorious and very active in nuisances. I used to spend my day either playing or watching 
+                                  cartoons or destroying gardens or roaming streets and playing for the entirety of the day. My parents were very sweet ones, never 
+                                  pressurized me or beat me although scolded me a lot but it was not enough. They decided to admit me to a strict convent school such 
+                                  that I concentrate into my studies. Though, I didn't study. Most of my friends at school were either good at studies, or good at 
+                                  extracurricular or cultural activities (which were given a lot of importance in my school) or both. I felt a bit inferior among the 
+                                  others in my classes since I was average in my academics and zero in hobbies. Our class teacher used to give lot of appreciation and 
+                                  applause to the painters and artists and we had this kind of notice board attached at the three walls of the class to display the good 
+                                  paintings. I too wanted to be praised and applauded, and I wanted to learn painting. My papa was very welcoming towards my hobby and 
+                                  therefore got me admitted in an art school.</p> 
+                                  
+                                  <p>The teacher was a very famous artist and was quite active in conducting and judging various art contests for kids and elders too. 
+                                    He used to take drawing classes in his home and there were lots of children and elder ones who came to learn painting. He was a very 
+                                    amicable and super sweet person. He had short-medium height, a fat tummy and a bald head, with some amount of hair above ears. He 
+                                    used to wear golden frames and ride a green ladies bicycle. He used to give the small kids (like me) chocolates and also showed 
+                                    cartoons before class timings and very soon I became one of his favorites. The most unusual but remarkable thing about him that I 
+                                    still remember is his very creepy, disturbing smile, that was a constant all the time i have seen and known. </p>
+                                <p>
+                                  So i used to go to art classes to his home, which my papa used to accompany me every day, the class hours were in the morning (from 
+                                  8:00 AM to 10:00 AM) and noon (from 2:30 pm to 4:30 pm) on weekends and maybe some extra classes on holidays in the mornings. The 
+                                  peculiar timing is obviously selected by me such that i don't miss my afternoon playing time. I don't remember now when things 
+                                  started very specifically, the fact that i have lost a lot of memories related to this due to trauma and maybe some locked deep 
+                                  inside my mind which I don’t and can't bring up. Yep, i was that kid-ish and childish and used to like drawing and paintings. I 
+                                  used to do fine sketching of cartoons (got selected for various sketching competitions and also awarded certificates and medals). 
+                                  I mostly used to love doing cartoon arts, and he used to praise me in front of my papa , or my friends in that art school (which was 
+                                  actually his home) and which child doesn't likes praises and applause at that age. For someone like me who didn't come first or second 
+                                  in exams, that praise  was overwhelming. I used to love the drawing classes, because of two reasons. On some days, my papa used to 
+                                  give me the permission to ride cycle which i died for, and take me to ice cream shop since it was hot summer noon’s and hence the 
+                                  entire experience was great; Also not forgetting the afternoon games time which never got compromised. 
+                                </p>
+                                <p>So i used to reach there by 2pm and used to give extra time because sir asked my papa that it would be better for me if I practiced 
+                                  lil bit more than others. On most days it used to be just me alone in the class. There were a lot of kids who used to learn painting, 
+                                  usually about 30-40 in every class but they came in later. On days when i used to reach early, i used to watch cartoons on the tv and 
+                                  i used to sit on the bed. He used to stand mostly beside the bed and used to talk about games, schools, friends and other usual stuffs. 
+                                </p>
+                                <p>When I remained deeply lost in the cartoons, he used to place his hands on my thighs, the hands were very smooth and soft, probably 
+                                  because he did paintings. I used to wear half pants and t-shirts or thin shirts mostly. He used to place his hands on my thighs, and 
+                                  used to touch me at several places, occasionally rub his hands and used to grin looking at me.</p>
+                                 
+                      </div>
+
+                          <div class="collumn">
+                              <div class="head"><span class="headline hl5"> “The Trauma Left deep scars”</span><p><span class="headline hl6">Story 1 Page 2</span></p></div>
+                              
+
+                              <p> Honestly, I used to feel nothing and 
+                                didn't understand anything. He also touched me at other places, and used to slowly reach his hands to my groin and used to touch my 
+                                genitals, which felt weird and tickling. That used to feel weird but since he never caused me any pain, i didn't realize anything wrong
+                                 at that time and did not react to anything. Sometimes, I tried to push his hands away or move away a bit by changing my posture and he 
+                                 used to just look into my eyes with that creepy grin in his face.</p>
+
+                              <p>There were days that were special. He used to lay me on the bed in sleeping posture and he used to lean on me and rub his groin against 
+                                my body. I don't remember any physical pain from that, but the thing i remember the most is the creepy grin smile on his face as he 
+                                stared into me while rubbing his body against me. He also used to ask me if i am feeling something or if i am enjoying that. Mostly 
+                                i kept watching cartoons on tv without answering or looking at that smile, i still remember that smile till date. There were events 
+                                when he put his hands inside my pants, and once i remember it was when alot of students are present. We used to have a big wooden 
+                                painting board, and i used to keep that over my lap and draw. Once he put his hands inside my pants under the board in front of everyone, 
+                                and pressed and asked me with that evil creepy grin if i was feeling anything. I remember i probably started crying, and he took me inside 
+                                in his room and gave me chocolate and showed me cartoons after which i forgot about it. Any of this events, he did not hurt me physically, 
+                                or caused any pain, i never felt physically hurt or any physical pain, and everything that he did was very gentle. </p>
+                                
+                              <p> But this actually led to immense mental trauma later when I came to understand about the reality and the mental disease called 
+                                pedophilia and this traumatic past trigged me when i got a little older when i started understanding. He used to have these 
+                                conversations even later when we met in road or in shops, since we lived in close neighboring localities, he used to ask me if i 
+                                remember those events, and if i want to relieve it again with that same creepy smile. I used to mostly ignore. My parents were a bit 
+                                reluctant when I requested to drop out of the drawing classes saying that I wasn’t interested anymore and used to give the excuse of 
+                                growing study pressure. I couldn’t come forward and tell everything to my parents because I felt embarrassed and ashamed. I did try 
+                                sometimes but I would end up crying alone even on the thought of that event. I left the classes, and also stopped drawing altogether, 
+                                lost my hobby and also gained a nightmare and a traumatized past. The trauma was immense, and the agony was not shareable. I couldn't 
+                                say about it to anyone, not my parents, not my friends. I felt different since then when a person of same gender touches me. I at 
+                                present have homophobia and I still feel uncomfortable and have a fear and awkwardness towards physical touches and closeness- not 
+                                just gays but even the males around me. Hugs and handshakes are awkward now. The darkness resides in me and I still have traumatizing 
+                                nightmares and disturbing flashbacks. </p>
+
+                                <div style="text-align: right;">-A Real story by an Anonymous writer</div></p>
+                  
+                              </div>
+                      </div> -->
+                      
+                  </div>
+
+                      <div class="subhead1" style="border-bottom:0.2rem solid #2f2f2f"></div>
+
+                    <div class="content">
+                      <div class="collumns">
+                        
+                          <div class="collumn1" id="Story2">
+                              <div class="head"><span class="headline hl3">The Facade</span><p><span class="headline hl4">Story 2</span></p></div>
+                              <p>
+                                I woke up with a jolt. Sweat beads had formed on my forehead and I was breathing hard. I was relieved to know that it was just a 
+                                nightmare, the relationship was over. But i couldn't stop thinking about all the things that had happened years before which still 
+                                haunts me.
+                              </p>
+                              <p>
+                                It was in February of 2019 I met him, the most charming guy i had met till then.The first time we saw each other was in a shopping mall, 
+                                I was wrapped in red, his favourite colour. We had a common friend who introduced us to each other and gave us the ocassion to meet again 
+                                at her birthday. We were very comfortable with each other, he made me smile and laugh after so many years :) . He lived in another city  
+                                so we exchanged our contact details and continued chatting with each other for months. We didn't meet each other a lot but he was already 
+                                my best friend. He seemed different than other boys in many ways, gave me the personal space i needed, never ran out of things to say and 
+                                always found something interesting to do. I was fascinated.
+                              </p>
+                              <p>
+                                After a few months, he asked me for being his girlfriend. He was a great guy no doubt, but he had his breakup recently and I thought 
+                                he should take some time first before taking any further decisions. Also I wasn't ready for a relationship either. So I politely refused 
+                                him but he didn't give up. For a whole month he kept on trying to win my heart, became a great understanding friend and gave me the 
+                                emotional support I wanted. After this i wasn't ready to lose him and said yes to his requests.
+                              </p>
+                              <p>
+                                After spending a perfect month with him in relationship suddenly his ex returned one day, texted him that she would like to be back in 
+                                relationship with him and demanded him to cut all connections with me. I was shocked when he agreed to this. But i knew the right thing 
+                                to do now would be to leave them since they had been together for over a year and his and mine relation was just a month. Possibly he 
+                                asked me to be in this relation to escape from his recent breakup and now that she returned, it was a complicated situation. I told him 
+                                I would respect his ex’s decision and cut all communication with him. Our common friend was enraged upon hearing this and approached 
+                                them to tell how wrong and unjust this was. Probably it made him feel guilty because after a few days he tried to contact me again, 
+                                accepted his mistake and suggested that we could be friends again. He seemed very guilty and sad about this, I sympathized with his 
+                                situation and agreed to this. After a week or so he came crying to me, saying how his ex’s return was a game she played and she was 
+                                gone again leaving him alone. I tried to console him and be a good friend. He used this opportunity to manipulate me and pestered me 
+                                with his requests to get back. I was furious initially but I don’t remember how did he managed to convince me once again that this time 
+                                it was real and he had no feelings for his ex but only loved me. And so, I made the biggest mistake of my life and we were back!
+                              </p>
+                      </div>
+
+                          <div class="collumn1">
+                              <div class="head"><span class="headline hl5"> “All good things come to an end”</span><p><span class="headline hl6">Story 2 Page 2</span></p></div>
+                              <img src="breakup.jpg" style="width: 40%; margin: 0.5rem 0 0 2%" align="right" />
+                              <p>
+                                The next few months of our relationship were great. He never seemed to be demanding or forcing. I gave him all my attention and time 
+                                except my study hours. We used to play mobile games together and sometimes i played from his account too, to earn rewards for him. He 
+                                loved being pampered and i loved watching him happy. We used to share all our secrets and emotional breakdowns due to various other 
+                                reasons. Honestly, i was going through a lot of family problems and had grown to be lonely and concealed my feelings from the people 
+                                around me. At this time, he became my pillar of support and lent me a pair of listening ears. I became extremely attached to him 
+                                emotionally and we promised each other to be present for each other at any dark times of our life. 
+                              </p>
+                              <p>
+                                With time i realized he loved attention and was a pure extrovert. During the time when i got really busy he used to find new people to talk to 
+                                and befriend them. He was never alone. In the meanwhile some of his lies got revealed. Although it was a small lie and did not matter to me, i 
+                                wondered why did he need to lie (Now i know the reason of his lie, it was simply his nature). Also, he had became addicted to the attention and 
+                                long hours of talking, so when I stayed busy during my exams he fought with me over this trivial issue and made it clear that whatever may be the 
+                                reason if he is not given time then he will grow apart. I tried to follow this but sometimes it was just not possible. At those times he used to 
+                                befriend new girls, and one girl among these gave me a weird vibe, I had this gut feeling that something was being hidden from me. I tried to 
+                                reach that girl but it appeared that neither she nor he wanted me to talk to her much. Things became more and more suspicious
+                              </p>
+                              <p>
+                                I had a strong feeling that things were very wrong and I needed to get to the bottom of this. I confronted him about this but it was of no use, 
+                                he argued that I had no trust on him. Anyhow I managed to get the girls contact info and asked her in a friendly way to tell anything that I should 
+                                know being his girlfriend but the girl simply denied everything (Although at a much later point she had accepted that they were close but he had 
+                                manipulated her into believing that I was the villain and shouldn’t be told anything about this). He had sensed that I was alarmed and inquiring 
+                                about this so he cut off his contact with the girl and convinced me that everything was normal and perfect.
+                              </p>
+                              <p>
+                                By this time, I had started having trust issues and any slight change from the normal would alarm me. I had started acting like a spy. 
+                                I tried to keep things as smooth as possible before I saw new activities in his ex’s social medias. I directly asked if he was still in 
+                                contact with her and he tried to dodge the question which increased my suspicions. But I needed to be sure. There was no way his ex was 
+                                going to talk to me since he had brain-washed her too. I asked my common friend to help and we managed to gather the proof that they 
+                                were still talking. On confrontation, he accepted it and told me that his ex’s important exams were soon and he did not want her to go 
+                                into depression now and that they were not exactly in a boyfriend-girlfriend relationship but rather friends. This made sense to me 
+                                then and I asked what was his plan. He explained me that after her exams he would tell her every truth and reveal our relationship to 
+                                her. For then the explanation worked for me but when her mid-semester exams were over I realized that he wasn’t talking about this exams 
+                                but the final one which were after 2-3 months. This scared me. I couldn’t see the end of it. It seemed to me a bunch of lies and my 
+                                trust in him was shaken. I started feeling insecure and worthless.
+                              </p>
+                              <p>
+                                I started observing the little details now, spying to find out the truth. I wanted to be wrong so badly but nothing was helping, 
+                                everything pointed that my suspicion was right. And finally, the day came when all of my doubts were cleared. His ex had uploaded 
+                                a screenshot of their texts in social media which was visible to a few selected friends. Our common friend was luckily among them, 
+                                she immediately sent the screenshots of those vulgar texts they had exchanged. I was shattered, I couldn’t believe that it was this 
+                                far. The cheating was real and all those promises were a mere lie. In a single moment all the beautiful memories of the past 1 year 
+                                seemed to disintegrate. I started seeing every truth hidden behind beautifully crafted excuses and expressions of love and care. Was 
+                                it ever true? Was his feelings ever real? How long had he been dating both of us together? I wanted all the answers but before that I 
+                                had a more important job to do. I needed to know if his ex knew any of this or if she had been similarly cheated because in the latter 
+                                case she had the right to know the truth and hence I waited for her last exam to get over. In the meantime when I waited, I had stopped 
+                                talking to him, blocked him from several places. He tried to contact me through many ways, called about 70 times before he sensed that 
+                                now I was fully aware and wouldn’t listen any of his lies. Finally once his ex’s exams were over I talked to her and seeing her shock, 
+                                already knew that we both had been cheated similarly. We both didn’t know about his relationship with the other one. She was enraged 
+                                and furious and wanted revenge. But I was done thinking about him, I just wanted to stay alone, have some time to me, to mourn for the 
+                                friend I thought I had.
+                              </p>
+                              <p>
+                                But before it could end completely his ex and I got to know that he had started finding other people to fool. We teamed up and told 
+                                those people the truth about him, the dirty game he played and tried to save them. After that I kept no contact with him but I’m in 
+                                contact with his ex and sometimes check in on her if she is doing fine. The post breakup time wasn’t easy, after a very long time I 
+                                was back to being alone, had no one to share my problems with, was emotionally broken and lost my trust in guys.
+                              </p>
+                              <p>
+                                It took a long time but I’m over it and doing fine. I have one message for everyone, there are many people who are emotionally drained 
+                                and broken and would do much better if someone stands beside them, listens to them patiently and give them a little support without 
+                                expecting anything in return. Your one help could mean a lot to someone.
+                              </p>
+                    
+
+                                
+                                <div style="text-align: right;">-A Real story by an Anonymous writer</div></p>
+                  
+                              </div>
+                      </div>
+
+                    </div>
+
+                    <div class="subhead1" style="border-bottom:0.2rem solid #2f2f2f"></div>
+
+                    <div class="content">
+                      <div class="collumns">
+                          <div class="collumn" id="Story1">
+                              <div class="head"><span class="headline hl3">A Child of ignorance, fear and sadness </span><p><span class="headline hl4">Story 3</span></p></div>
+                              <img src="friend.jpg" style="width: 40%; margin: 0.5rem 0 0 2%" align="right" />
+                              <p>Everyone probably has that time in their life when they felt vulnerable by some means. That was me in my 4th standard. I was 10 probably and a person struggling to make an image in front of the rest of my classmates and the teachers. I was not blessed with the best friend that I am at present. At that time, I had someone else to call a best friend who was bent on in probably showing me how inferior I was in front of the rest of the class and of course herself. The Story goes like this, I was a child with no proper academic excellence and that I used to embarrassed myself every time in front of the whole class probably trying to make a mark. </p>
+                              <p>I was feverish one day and had to remain in my house for nearly 4 days without going out anywhere as that little feverish tendency exceeded and I was in my bed. For this I was missing out my notes and also things that were probably important for my lessons. I might not be academically good but I was a tryer, I never wanted to beg or ask anyone for any sort of notes. I was pretty independent as a student and I also wanted to make sure that I take dictations in the class in the most efficient way possible. However, as I was not present in the class, I needed someone to help me out in taking down the notes. I had a landline in my house through which I connected with my so-called best friend who said that she would help me with anything. I believed in that and probably that was the biggest mistake that I have ever done in my life. I asked her to xerox whatever she has written in her copy as the notes given in the class was probably massive and as it is customary in the Indian schools, they give a lot of writing stuffs and a lot of notes and class work, so much that a student might bend over at that pressure. </p>
+                                <p>What happened with me at that time was probably what I would not want for anyone else. That friend of mine said that there were no photocopy shops open at their region and that providing a copy to me for a day would not be that easy as she had to study and the weekend was near. Instead of that her mother copied each and every note in a different paper and gave it to me. That was a really sweet gesture and I appreciated it like anything. The problems escalated in the next month. The next month was the Friendship Day and I gave her a friendship band which she didn't like, she came and asked me why I gave that and that she needed a new one if there was a better friendship to be established. My mother was not having a proper income at that time and my mother was a single mother she had to work day and night for helping me survive and my studies to keep going on. She however afforded an even better friendship band. The next day the teacher was probably giving another note and as I said I was a person who took really fast dictations unlike my best friend who was a slow writer, she asked me for my copy and I asked her to let me write first and then shall I give her my copy for her to replicate it in her own sheet. Just because of the fact that I didn't give her my copy at that instant she said that I was not a good friend and that she would maintain distance from me even if I give her the logic necessary for me to copy so that she could write her own writings properly. </p>
+                                
+                                <p>She however didn't understand what I meant. Then she started maintaining distance from me. I started crying on that matter as I was a very emotional child. This continued for more than a week or probably a month which I cannot recall. I used to sit with a friend of mine who was close to me but was separated just due to my so-called best friend’s vengeful act. She gradually started separating me from my other friends by telling them bad things about me and gradually cornered me up. She was one of the famous girls, as a result of which she and her words were believed by all. Not a single person was sympathetic towards me, be it my teacher or my friends. I was sad, probably depressed even if depression is a strong word. When I was at my home I was jolly however, every morning I used to wake up with tears in my eyes. </p>
+                                
+                                <p>School was dreadful to me and I didn’t ever let anyone in my house understand what I was going through. My grandparents kept me entertained and sold it to anyone who came in and so did any near family member. Once I tried to hint my mother what was going on with me but she said it was just a primary school issue and that it must not be addressed in that manner and I being a responsible kid might have had that much capacity to deal with it. The situation had nothing to do with me as it was not just a little friendly tussle or such.  </p>
+                                
+                                
+                                <p>One day another teacher entered our class, she was a new teacher who noticed how bad I was doing in the class and how I was not like any other child participating in anything that was good. Literally I was on my own for a month and no one was there to protect me. I should not say that my mother was an irresponsible person because it is not easy for her to understand the condition that I was in, as she herself was in a condition that was important for providing me the bare minimum. My mother is a cherubim in my life and at that time it was not something other than that. </p>
+                                <p>This new teacher called my mother one day and explained her the whole thing that was going on with me which she probably thought was affecting my studies and me as a whole. She came in my life as a person who was probably there to pull me out from The Darkest corners of my life at that time. The time when I tormented myself, the time when I thought I should not even exist, the time when I thought I should not be even born. It must however not seem that I was struggling over a friendship but I was struggling over bullying, ignorance and the harshness of the situation that my mom at the time was in.</p> 
+                                  
+                                  <p>Standing today I feel how could have I been here if I would not have been fighting for my own existence back then. Then must I also say how the situation affected me. I became revengeful from my own side. I then started preying on those people who were innocent. I hated that innocence that brought me the tragedy that was in my life. There was another girl in my classroom who was a bit retarded in terms of learning. I used to hate her because at that time, she due to her condition was excused and sympathized with but I wasn't. I was mentally in a way tortured by the situation and the people that were in it. This girl that I am speaking of was who used to do certain little stupid things that might be excuseed by the others but used to anger me like anything. Her little mischief made me prey on her like a person who used to demotivate her while doing any possible thing.  </p>
+                                <p>
+                                  I never became a good friend to that girl, rather used to abuse her for all her mistakes even for the minimum mistake that could be probably done by anyone. In certain occasions I did hit her and literary became a demon in her life that probably gave me a sense of domination or dominating someone who is probably less powerful than me. I felt powerful. It was however not until another friend of mine who was the best friend of this girl made me realise that it was wrong to turn against some innocent person and abusing verbally or physically if that person is probably not totally responsible for that. That the anger that I had in myself should not be casted on anyone else.   
+                                </p>
+                              
+                                 
+                      </div>
+
+                          <div class="collumn">
+                              <div class="head"><span class="headline hl5"> “A good Mental Health is a Treasure”</span><p><span class="headline hl6">Story 1 Page 2</span></p></div>
+                              
+                              <p>I understood the demon I became, the demon who was probably the child of long time of ignorance, fear, sadness and so on. I was probably doing everything subconsciously but I became a fear of someone and that someone had a best friend to stand by her side but in my case my best friend in a way left my side, misunderstood me and made the whole class turn against me. </p>
+
+                              <p> I probably blamed my fate for getting into the worst situation in worst time with the worst people. I understood that I was probably alone in the world to suffer only that one teacher by my side to console me. I felt embarrassed as a human. </p>
+
+                              <p>Soon the final examination came in and we finished it. I was promoted to a new Class with new expectations and new beginnings also probably new challenges. All of the characters who were there other than me in the story had the sections changed after a class or two and finally we met in my 10th standard when I was a girl of 16. That time I had a new best friend who presently is my best friend. That tragedy didn't follow me back, that guilt didn't pull me down. This is what how my story went and thereby time went on. </p>
+                                
+                              <p> Now I was concentrating mostly on my studies. And after I met these people again they were changed and matured. And one day that very girl who broke my heart over a friendship band and a school note was standing in front of me all tall and joking on the fact that traumatized me 6 years ago. Standing beside her was that very girl who literally forgot that days ago I was that very monster that haunted her school. All of us changed, transformed, metamorphosed. Probably what remained of US was the name just the name. </p>
+
+                              <p>Never did I tie another friendship band after that event never did I trust anyone that deeply since. I felt that I never deserve any friendship of any person or even if I do then better remain away from it. Or it must occur that some people do not deserve my friendship at all. It's a bad thing that I have to speak of all of these here in an essay probably going to be read by strangers. </p>
+                              
+                              <p>Now whoever is the reader of the passage please do be a good friend and never ignore your friend however young you are because you don't know who you might lose them in the process. If you are a parent please listen to your child and make sure that they are not facing the same thing in their school, if you are a brother or a sister or anyone who loves their younger sibling or any younger person please check in to their mental issues and health. It might occur that it is very useless to look into any quarrel between friends but in most of the cases it is serious and results in deep scars in someone's life. Never do take anyone else’s mental health lightly as mental health is a treasure that you don't get every moment in your life therefore when you get it please don't lose it. I have suffered from not being able to be a good person, have not been able to be a person who could cope up with any situation or probably I tried my best to fit in but I was a misfit. Society is a weird place and probably has its place for everyone, as again we should not blame ourselves every time for everything that happens around us and that Universe has a way of making the stronger version of what we are today. </p>
+                              
+                              <p>This is the minimum that I penned down from the faded corners of my brain, some words that probably have etched in my brain and would not go away in this life. To whoever is reading this, may you have a life where you have the best of friends. Thank you and have a great life ahead.</p>
+                              
+                              <div style="text-align: right;">-A Real story by an Anonymous writer</div></p>
+                  
+                              </div>
+                      </div> -->
+                      
+                  </div>
+                    
+
+                  </div>
+       
+            </div>  
+          </div>  
+            
+            
+
+            <Section class="end">
+      
+              <div class="endbox">
+                      <h3><i class="fa-solid fa-ghost"></i>&nbsp;Stalk Us At</h3>
+                      <hr>
+                      <br>
+                      <ul>
+                            <li><a href="https://www.instagram.com/secreta_inc/" target="_blank"><i class="fa-brands fa-instagram-square"></i>&nbsp;Instagram: secreta_inc</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin" target="_blank"></i>&nbsp;LinkedIn: Secreta club </a></li>
+                            <li><a href="https://www.facebook.com/Secreta-107793882025092" target="_blank"><i class="fa-brands fa-square-facebook"></i>&nbsp;Facebook: Secreta </a></li>
+                            <li><a href="mailto:incsecreta@gmail.com"><i class="fa-solid fa-envelope-open-text"></i>&nbsp;Email: incsecreta@gmail.com  </a></li>
+                            <br><br><br>
+                          <div class="subsribe">
+                            <a href="mailto:incsecreta@gmail.com">CONTACT US</a>
+                          </div>  
+                          </ul>
+                          <div class="cloud"><img src="cloud1.png"></div>
+               </div>
+              <div class="circlesbox">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <br><br><br><br><br>
+              
+            </Section>
+
+        
+
+    
+   </body>
+ </html>
+
