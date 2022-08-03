@@ -202,13 +202,13 @@
                 min-height: 70rem; 
                 height: fit-content;
                 overflow: hidden;
-                display: inline-flex;
+                display: flex;
                 align-items: stretch
             }
             .leftside {
                 background-image: linear-gradient(to right bottom, #e79a58, #eba561, #efaf6a, #f3ba74, #f7c47e, #f7ca85, #f8d08d, #f8d695, #f6d99b, #f4dca1, #f2dea8, #f0e1ae);
                 width: 19%;
-                max-height: 322rem;
+                /* max-height: 322rem; */
                 /* min-height: 70rem; */
                 float: left;
                 padding-top: 1%;
@@ -743,6 +743,28 @@
                     font-size: 120%;
                 }
               }
+              @media (min-width: 1600px){
+                .leftside{
+                /* width: 100%; */
+                /* display: block; */
+                background-image: url('vine_bg.png');
+                background-size: 100%;
+                }
+                .superhero {
+                  display: none;
+                }
+              }
+              @media (max-width: 1400px){
+                .leftside{
+                /* width: 100%; */
+                /* display: block; */
+                background-image: url('vine_bg.png');
+                background-size: 100%;
+                }
+                .superhero {
+                  display: none;
+                }
+              }
             @media (max-width: 998px) {
                 html {
                     font-size: 50%;
@@ -823,7 +845,12 @@
 
                 }
                 .leftside {
-                  max-height: 470rem;
+                  /* max-height: 470rem; */
+                  background-image: url('vine_bg.png');
+                  background-size: 100%;
+                }
+                .superhero{
+                  display: none;
                 }
                 .header{
                   font-size: 5.5rem;
@@ -867,9 +894,9 @@
               .nav ul li:last-child {
               font-size: 1.6rem;
             }
-            .leftside {
+            /* .leftside {
                   max-height: 500rem;
-                }
+                } */
           }
 
 
@@ -925,33 +952,8 @@
                 <div class="superhero"><img src="vine2.png"></div>
                 <div class="superhero"><img src="vine2.png"></div>
                 <div class="superhero"><img src="vine2.png"></div>
-                <div class="superhero"><img src="vine2.png"></div>
-                <div class="superhero"><img src="vine2.png"></div>
                 <!-- <div class="last_vine"><img src="vine2.png"></div> -->
-                <div class="mob">
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  <div class="superhero"><img src="vine2.png"></div>
-                  
-
-                </div>
+                
                 <!-- <div class="dog"><img src="cartoon1.png"></div> -->
             </div>
 
@@ -1185,7 +1187,7 @@
               else if(count == count3){document.getElementById("answer2").innerHTML = "Your choices makes you empathetic towards plants and trees like Jadav Payeng, who is also popularly known as 'The Forest Man of India' who spent nearly 30 years of his life planting around 40 million trees to create a real man-made forest  over the banks of barren Brahmaputra which is perhaps one of the most noble and empathetic action shown towards the environment and nature by a human who only caused mass destruction of forests. This should inspire you to take over the batton and inspire everyone you know to be more empathetic towards plants and trees and call out mass afforestation activities which could turn back the cycle of ecosystem preventing climate change, biodiversity loss and enhance biosphere stability. Make our earth green and plant trees and trees and more trees.";}
               else if(count == count2){document.getElementById("answer2").innerHTML = "ou are empathetic and show kindness and love much similiar to Shri Ravi Kalra;  also known as the “No Honking Man of India” who perhaps lies in the list of unsung and unheard hero of welfare and protection of the differently abled, elderly, impoverished women and animals.  Be more kind to the old and differently abled people you know in your own life and be a pillar of strength and support for those who require that. You shall earn a lot of blessings and a pure heart with your karma as Shri Ravi Kalra inspires all of us too.";}
               else if(count == count1){document.getElementById("answer2").innerHTML = "You are a kind and a pet lover.You could be like Rakesh Shukla who has given shelter and food to many abondended street dogs";}
-              else if(count == count0){document.getElementById("answer2").innerHTML = "You are a couch potato";}
+              else if(count == count0){document.getElementById("answer2").innerHTML = "You love the comfort of your home and are a peace loving person. We believe you can be a great hero in future if you strive and take a kind step towards any of the social welfare activty of your choice.";}
 
               // count0=0; count1=0; count2=0; count3=0; count4=0; count5=0; count6=0;
                   return false; // required to not refresh the page; just leave this here
